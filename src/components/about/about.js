@@ -9,6 +9,7 @@ const About = () => {
         <div className='container flex flex-wrap justify-center items-center mx-auto'>
             {/* Jumbotron */}
             < Jumbo />
+            {/* news */}
             {/* card 1 */}
             {/* card 2 */}
             {"HELLO WORLD".repeat(2000)}
