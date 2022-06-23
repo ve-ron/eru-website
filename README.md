@@ -1,70 +1,53 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+# Privacy Policy
+## What information do we collect?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Guild Information**
+- Bot stores guild ids. Bot doesn't have any power over managing the guild and members unless and until permissions are given by moderators or owner of the server.
+- Guild id is stored to save server configurations for better experience.
+- Data is not shared with any third party/ external companies.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Personal Information**
+- Messages received for debug purpose and anti-spam filters.
+- Data regarding your interaction with the bot which includes command executed, time, guild, channel of execution.
+- Information you give voluntary to the bot via commands.
+- Data is not shared with any third party/ external companies.
 
-### `npm test`
+**What we do with your data?**
+- Message content is solely used for proper functioning of moderative actions, and is not stored permanantly.
+- We retain data for as long as is necessary to provide you with your requested service. Data is removed when the reason for its collection is no longer applicable.
+- To remove your data contact us here. Do note user wont be able to interact with some part of our bot hence after.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Website Policy
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**What information do we collect?**
+- Eru does not request, share or sell your personal information. The amount of data collected is minimal for proper functioning of certain commands which require such vital information.
+- We collect personal information that you voluntarily provide to us when you register on the Website, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Website or otherwise when you contact us.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**What we do with your data?**
+- We use the information we collect in various ways, including to:
+- Provide, operate, and maintain our website
+- Improve, personalize, and expand our website
+- Find and prevent fraud
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Right to access your data and delete it
 
-### `npm run eject`
+**Access your data**
+You can contact us on our Discord support server at anytime to request your data and request deletion.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In case you need it, you can also contact support at .
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+We will get back to you with a report of all data we have on you.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Delete your data**
+You can request data deletion by contacting us. We will automatically (and without looking at that data) erase it permanently from all our databases. Do note user wont be able to interact with some part of our bot hence after.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact Us.
+**You can contact us on following platforms.**
+- [Discord](https://discord.gg/f83zVQHX6J)
+- [Email us]()
+- [GitHub](https://github.com/ex-trimist/)
