@@ -19,7 +19,7 @@ code {
 }
 
 .App {
-  background-image: url('../public/images/back_hyouka.jpg');
+  background-image: url('images/back-hyouka.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
