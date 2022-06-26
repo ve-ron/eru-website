@@ -10,10 +10,11 @@ const CFooter = () => {
             <div className="container md:flex flex-wrap justify-between items-center md:mx-auto ">
                 <div className="mb-6 md:mb-0">
                     <Link to="/#" className="flex items-center">
-                        <img src="https://cdn.discordapp.com/embed/avatars/1.png" className="mr-3 h-8 rounded-full" alt="{E_NAME}" />
+                        <img src="/logo512.png" className="mr-3 h-8 rounded-full" alt="{E_NAME}" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap text-c_normal-light hover:text-c_focus-light">{E_NAME}</span>
                     </Link>
                     <span className="flex items-center text-c_normal-light">Invite Eru today.</span>
+                    <span className="flex items-center text-sm text-c_normal-light">© 2022 Eru bot. All rights reserved.</span>
                 </div>
                 <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>

@@ -100,7 +100,7 @@ const ToS = () => {
                         <div className="m-2">
                             <h1 className="font-bold  ">Changes to These Terms</h1>
                             <p>
-                                The Company reserves the right to update these Terms of Service at any time. If our Terms change, we will post a notice on our site located at https:something.com and/or notify you by email or other means. Unless we state otherwise, your continued use of the Services after we post modifications to the Terms constitutes your agreement to those changes. If you object to the changes, please do not continue using the Services.
+                                The Company reserves the right to update these Terms of Service at any time. If our Terms change, we will post a notice on our site located at <Link to="/policy" className="text-pink-800 hover: ">{WEBSITE}</Link> and/or notify you by email or other means. Unless we state otherwise, your continued use of the Services after we post modifications to the Terms constitutes your agreement to those changes. If you object to the changes, please do not continue using the Services.
                             </p>
 
                         </div>
