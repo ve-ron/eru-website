@@ -3754,10 +3754,8 @@ class Commands extends Component{
 
     createCategory = () => {
         let arr = Object.keys(this.state.category).map((e) => {
-            // console.log(e)
             return (
                 <div key={e} onClick={(x)=>{
-                    // console.log(e)
                     this.setState((pre) => {
                         return {
                             activeCategory: e,
@@ -3775,8 +3773,6 @@ class Commands extends Component{
     createCommands = () => {
         let actCat = this.state.activeCategory || 'server';
         let arr = Object.entries(this.state.category[actCat]).map(([k,v], i) => {
-            // console.log(k)
-            // console.log(v)
             return (
                 <div key={k} id={k} className="m-5 fadeIn">
                     <div className="p-2 px-4 border-c_focus-light border-2 rounded-lg">
@@ -3801,7 +3797,6 @@ class Commands extends Component{
                                         ● Admin
                                     </div>
                                 :''}
-                                {/* <span className="text-sm text-rose-200 bg-pink-600 rounded-lg p-1 px-2">● Admin</span> */}
                             </div>
                         </div>
                         <hr className="border-c_nav-pink-light my-2 "></hr>
@@ -3829,7 +3824,6 @@ class Commands extends Component{
                             {/* subcommands */}
                             {
                                 ((vsub_commands)=>{
-                                    // console.log(vsub_commands)
                                     if(vsub_commands){
                                         let oo = Object.entries(vsub_commands).map(([ek, di],i)=>{
                                             return (
@@ -3894,23 +3888,18 @@ class Commands extends Component{
     }
 
     handleSidebar = ( event ) => {
-        // console.log(1)'
-        // console.log(this.state.sidebarHidden)
         event.preventDefault();
         this.setState((prevState) => {
             return {sidebarHidden:!prevState.sidebarHidden}
         })
-        // console.log(this.state.sidebarHidden)
     }
 
     searchCmmd = () => {
         
         if (true) {
-            console.log(1,this.state.searchText)
             let data = this.state.commands[this.state.searchText.toLowerCase()];
             if (data){
                 let [cog, command] = data
-                // console.log(cog, command)
                 if (cog){
                     this.setState({
                             activeCategory:cog,
@@ -3940,22 +3929,18 @@ class Commands extends Component{
                     <div className={"flex-row p-1 border-r-2 w-5/6 h-full border-red-50 text-center bg-rose-200"}>
                         <div className="text-pink-800 text-xl">
                             <div className="p-1 mt-1 flex justify-between items-center">
-                                {/* <i className="bi bi-app-indicator px-2 py-1 rounded-md bg-blue-600"></i> */}
                                 <h1 className=" font-bold text-pink-800 text-[15px] ml-3">Categories</h1>
-                                {/* <i className="bi bi-x cursor-pointer ml-28 lg:hidden" onclick="Close()" ></i> */}
                                 <button className="mr-3" onClick={this.handleSidebar}>
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
                                     </svg>
                                 </button>
                             </div>
-                            {/* <div className="my-2 bg-gray-600 h-[1px]"></div> */}
                         </div>
                         <hr className="border-red-50 my-2 "></hr>
                         <div
                             className="p-1 flex items-center rounded-md px-4 duration-300 "
                         >
-                            {/* <i className="bi bi-search text-sm"></i> */}
                             <div className="relative mt-3 w-full">
                                 <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                                     <svg className="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"></path></svg>
@@ -3970,19 +3955,6 @@ class Commands extends Component{
                             </div>
                         </div>
                         {this.createCategory()}
-                        {/* <div className="p-2 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-c_focus-light " >
-
-                            <span className="text-[15px] ml-4  font-bold">Home</span>
-                        </div>
-
-                        <div className="p-2 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-c_focus-light " >
-
-                            <span className="text-[15px] ml-4  font-bold">Home</span>
-                        </div>
-                        <div className="p-2 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-c_focus-light " >
-
-                            <span className="text-[15px] ml-4  font-bold">Home</span>
-                        </div> */}
                     </div>
 
                     <button className="backdrop-blur-sm w-1/6 h-full" onClick={this.handleSidebar}>
@@ -3999,15 +3971,11 @@ class Commands extends Component{
                         <div className="hidden p-1 border-r-2 border-red-50 md:block w-2/6 xl:w-1/6 overflow-y-auto text-center bg-rose-200">
                             <div className="text-pink-800 text-xl">
                                 <div className="p-1 mt-1 flex items-center">
-                                    {/* <i className="bi bi-app-indicator px-2 py-1 rounded-md bg-blue-600"></i> */}
                                     <h1 className="font-bold text-pink-800 text-[15px] ml-3">Categories</h1>
-                                    {/* <i className="bi bi-x cursor-pointer ml-28 lg:hidden" onclick="Close()" ></i> */}
                                 </div>
-                                {/* <div className="my-2 bg-gray-600 h-[1px]"></div> */}
                             </div>
                             <hr className="border-red-50 my-2 "></hr>
                             <div className="p-1 flex items-center rounded-md px-4 duration-300 ">
-                                {/* <i className="bi bi-search text-sm"></i> */}
                                 <div className="relative mt-3 w-full">
                                     <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                                         <svg className="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"></path></svg>
@@ -4023,19 +3991,7 @@ class Commands extends Component{
                             </div>
 
                             {this.createCategory()}
-                            {/* <div className="p-2 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-c_focus-light " >
 
-                                <span className="text-[15px] ml-4  font-bold">Home</span>
-                            </div>
-
-                            <div className="p-2 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-c_focus-light " >
-
-                                <span className="text-[15px] ml-4  font-bold">Home</span>
-                            </div>
-                            <div className="p-2 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-c_focus-light " >
-  
-                                <span className="text-[15px] ml-4  font-bold">Home</span>
-                            </div> */}
                         </div>
 
                         {/* Commands */}
@@ -4063,42 +4019,7 @@ class Commands extends Component{
 
                                 {/* commands starts here */}
                                 {this.createCommands()}
-                                {/* <div className="m-5">
-                                    <div className="p-2 px-4 border-c_focus-light border-2 rounded-lg">
-                                        <div className="flex justify-between">
-                                            <div className="">
-                                                command1
-                                            </div>
-                                            <div className="">
-                                                Admin
-                                            </div>
-                                        </div>
-                                        <hr className="border-c_nav-pink-light my-2 "></hr>
-                                        <div className="break-words">
-                                            {"Description".repeat(100)}
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div className="m-5">
-                                    <div className="p-2 px-4 border-c_focus-light border-2 rounded-lg">
-                                        <div className="flex justify-between">
-                                            <div className="">
-                                                command1
-                                            </div>
-                                            <div className="">
-                                                Admin
-                                            </div>
-                                        </div>
-                                        <hr className="border-c_nav-pink-light my-2 "></hr>
-                                        <div className="break-words">
-                                            {"Description".repeat(100)}
-                                        </div>
-                                    </div>
-                                </div> */}
-
-                                
-                                {/* {"hello".repeat(100)} */}
                             </div>
                         </div>
 

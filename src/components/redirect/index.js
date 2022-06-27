@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import { INVITE_URL, TOPGG_URL, SUPPORT_SERVER_URL } from '../../constant'
 
 const CRedirect = () => {
-    // console.log(useLocation())
     const { pathname } = useLocation();
     
     useEffect(()=>{
@@ -23,7 +22,6 @@ const CRedirect = () => {
         }
         
     },[pathname])
-    // console.log(pathname.slice(1))
     let path = ((pathname)=>{
         switch (pathname) {
             case "/invite":

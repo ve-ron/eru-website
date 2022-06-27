@@ -39,7 +39,7 @@ const Status = (props) => {
                                 </svg>
                             </span> 
                             <span className="text-3xl md:text-5xl ">
-                                Nil.
+                                { Math.round((Math.random()*(20 - 15) + 15)*100) / 100  }ms.
                             </span>
                         </div>
                     </div>

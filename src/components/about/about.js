@@ -27,9 +27,7 @@ const About = () => {
                 <Card4 />
                 <Card5 />
             </section>
-            
-
-            {/* {"HELLO WORLD".repeat(2000)} */}
+        
         </div>
         </>
     )

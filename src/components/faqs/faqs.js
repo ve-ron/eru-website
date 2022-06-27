@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Faqs = (props) => {
 
     const [visible, setVisible] = useState('');
 
-    useEffect(() => {
-        
-        console.log(visible)
-    },[visible]) 
-
     const handleVisible = (id) => {
         if (visible === id ) {
             setVisible('')
             return
         }
-        setVisible(id)
-        
+        setVisible(id)        
     }
 
 
