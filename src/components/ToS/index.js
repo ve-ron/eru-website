@@ -86,11 +86,6 @@ const ToS = () => {
                         </div>
                         <div className="m-2">
                             <h1 className="font-bold  ">Indemnification</h1>
-                            {/* <ul type="circle" className="list-inside list-disc">
-                                <li>Bot stores guild ids. Bot doesn't have any power over managing the guild and members unless and until permissions are given by moderators or owner of the server. </li>
-                                <li>Guild id is stored to save server configurations for better experience. </li>
-                                <li>Data is not shared with any third party/ external companies. </li>
-                            </ul> */}
                             <p>
                                 You agree to indemnify and hold the Company harmless from and against any and all claims, liabilities, damages (actual and consequential), losses and expenses (including attorney's fees) arising from or in any way related to any claims relating to (i) your use of the Services (including any actions taken by a third party using your account), and (ii) your violation of these Terms.
 
