@@ -30,7 +30,7 @@ const Faqs = (props) => {
                                             Is Eru free to use?
                                         </div>
                                         <div className="text-red-500" >
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-c_focus-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                            <svg xmlns="https://www.w3.org/2000/svg" className="h-6 w-6 text-c_focus-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                                             </svg>
                                         </div>
@@ -53,7 +53,7 @@ const Faqs = (props) => {
 
                                         </div>
                                         <div className="text-red-500" >
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-c_focus-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                            <svg xmlns="https://www.w3.org/2000/svg" className="h-6 w-6 text-c_focus-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                                             </svg>
                                         </div>
@@ -78,7 +78,7 @@ const Faqs = (props) => {
                                             Can Eru be added in small servers?
                                         </div>
                                         <div className="text-red-500" >
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-c_focus-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                            <svg xmlns="https://www.w3.org/2000/svg" className="h-6 w-6 text-c_focus-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                                             </svg>
                                         </div>
@@ -98,7 +98,7 @@ const Faqs = (props) => {
                                             How to setup Eru?
                                         </div>
                                         <div className="text-red-500" >
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-c_focus-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                            <svg xmlns="https://www.w3.org/2000/svg" className="h-6 w-6 text-c_focus-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                                             </svg>
                                         </div>
@@ -120,7 +120,7 @@ const Faqs = (props) => {
                                             What are our Privacy Policies?
                                         </div>
                                         <div className="text-red-500" >
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-c_focus-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                            <svg xmlns="https://www.w3.org/2000/svg" className="h-6 w-6 text-c_focus-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                                             </svg>
                                         </div>
