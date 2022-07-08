@@ -10,8 +10,8 @@ const Status = (props) => {
         <div className="relative overflow-x-hidden h-full  container flex flex-1 justify-center items-center mx-auto ">
             <div className="container opacity-95 justify-between h-full  my-2 mx-2 md:mx-auto rounded-lg bg-rose-200 overflow-hidden">
                 <div className="my-5">
-                    <span className="text-pink-800 text-3xl font-semibold">Status</span><br/>
-                    Stats are not updated immidiately.
+                    <span className="text-pink-800 text-3xl">Status</span><br/>
+                    Stats are not updated immediately.
                 </div>
                 <div className="flex flex-col md:flex-row rounded-lg bg-gradient-to-r from-rose-300/75 via-purple-400/65 to-violet-200 md:mx-12 mx-2  justify-center">
                     <img alt="status" className="h-96 object-contain" src={img}>
@@ -59,7 +59,7 @@ const Status = (props) => {
                             Users
                         </div>
                         <div className="text-lg text-rose-50">
-                            1,289,585 
+                            1,443,637
                         </div>
                     </div>
                     <div className="md:w-full rounded-lg my-5 mx-2 md:m-12 p-2  bg-rose-300">
@@ -67,12 +67,10 @@ const Status = (props) => {
                             Servers
                         </div>
                         <div className="text-lg text-rose-50 ">
-                            572
+                            702
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
         </>    

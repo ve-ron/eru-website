@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Ticker = () => {
 
@@ -8,10 +9,10 @@ const Ticker = () => {
             <div className="px-5 border-dashed border-y-4 border-c_focus-light">
                 <div className=" relative flex overflow-x-hidden">
                     <div className="w-full py-1 animate-marquee whitespace-nowrap">
-                        Eru Website is up, hurrayy..
+                        <Link className="text-pink-800 hover:underline" to='/invite'>Invite</Link> Eru to your Server today. 
                     </div>
                     <div className="absolute top-0 py-1 w-full animate-marquee2 whitespace-nowrap">
-                        Eru Website is up, hurrayy..
+                        <Link className="text-pink-800 hover:underline" to='/invite'>Invite</Link> Eru to your Server today. 
                     </div>
                 </div>
             </div>

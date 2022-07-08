@@ -1,6 +1,6 @@
 import React from "react";
 
-import img from '../../images/welcomer-f-1.png'
+import img from '../../images/eru-spotify.png'
 
 const Card3 = () => {
 

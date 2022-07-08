@@ -14,6 +14,9 @@ const PP = () => {
                 </div>
                 <div id="privacy-policy" className="text-left m-4">
                     <div className="">
+                        <div className="m-2 font-semibold ml-2">
+                            Last updated: June 29, 2022
+                        </div>
                         <h1 className="text-xl font-semibold ml-2" >What information do we collect? </h1>
                         
                         <div className="m-2">

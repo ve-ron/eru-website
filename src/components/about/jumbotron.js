@@ -12,7 +12,7 @@ const Jumbo = () => {
             <img className="w-full h-48 object-cover md:block md:w-1/2 md:h-auto sm:order-1" alt='eru img' src={img}></img>
             <div className="text-left px-10" >
                 <h1 className="text-3xl mt-4 sm:text-4xl sm:mt-10 md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-pink-800">A bot for every server.</h1>
-                <p className="text-lg sm:mt-5 sm:text-xl md:text-base lg:text-xl mt-4">A multi-purpose bot with hundreds of commands.<span className="text-success"> Setup welcomer to invite new members in a style.</span> Use Auto-moderation to protect your servers. Control channel wise commans. Search animes, movies etc directly on discord.</p>
+                <p className="text-lg sm:mt-5 sm:text-xl md:text-base lg:text-xl mt-4">A multi-purpose bot with hundreds of commands.<span className="text-success"> Setup welcomer to invite new members in a style.</span> Use Auto-moderation to protect your servers. Control channel wise commands. Search animes, movies etc directly on discord.</p>
                 <div className="flex-col sm:flex-row my-8">
                     <button className="bg-pink-500 hover:bg-c_focus-light text-c_normal-light w-4/5 text-xl mb-3 py-2 rounded-md sm:w-auto sm:mr-5 sm:px-5 sm:py-3 md:mb-auto md:rounded-lg md:text-base md:mr-2 md:p-4 md:py-2 lg:text-xl lg:mr-5 lg:px-5 xl:text-2xl xl:p-3 xl:px-6 xl:mr-8 duration-300">
                         <Link to='/invite'>

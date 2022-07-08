@@ -2,7 +2,7 @@ import React from "react";
 
 import './about.css'
 
-import img from '../../images/welcomer-f-1.png'
+import img from '../../images/eru-automod.png'
 
 const Card2 = () => {
 

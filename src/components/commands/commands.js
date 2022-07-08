@@ -10,42 +10,42 @@ class Commands extends Component{
         this.state = {
             category:{
                 "fun": {
-                    "tweet": {
+                    "truth": {
                         "aliases": [
-                            "twiter"
+                            "turthonly"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "create funny tweets",
+                        "description": "truth or truth",
                         "enabled": true,
                         "extras": {},
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "tweet",
-                        "short_doc": "",
-                        "signature": "<user/id/mention> <tweet>",
-                        "full_signature": "eru ( tweet | twiter ) <user/id/mention> <tweet>",
-                        "usage": "<user/id/mention> <tweet>",
-                        "sub_commands": null
-                    },
-                    "joke": {
-                        "aliases": [
-                            "makejoke"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "make a joke",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "joke",
+                        "name": "truth",
                         "short_doc": "",
                         "signature": "",
-                        "full_signature": "eru ( joke | makejoke ) ",
+                        "full_signature": "eru ( truth | turthonly ) ",
                         "usage": null,
+                        "sub_commands": null
+                    },
+                    "pickup": {
+                        "aliases": [
+                            "pickupline"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "try juicy pickup lines",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "pickup",
+                        "short_doc": "",
+                        "signature": "<user/id/mention>",
+                        "full_signature": "eru ( pickup | pickupline ) <user/id/mention>",
+                        "usage": "<user/id/mention>",
                         "sub_commands": null
                     },
                     "8ball": {
@@ -67,63 +67,6 @@ class Commands extends Component{
                         "usage": "<user/id/mention>",
                         "sub_commands": null
                     },
-                    "fakedc": {
-                        "aliases": [
-                            "dcmsg"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "create funny discord messages",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "fakedc",
-                        "short_doc": "",
-                        "signature": "<user/id/mention> <message>",
-                        "full_signature": "eru ( fakedc | dcmsg ) <user/id/mention> <message>",
-                        "usage": "<user/id/mention> <message>",
-                        "sub_commands": null
-                    },
-                    "phcmnt": {
-                        "aliases": [
-                            "pornhubcomment"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "create funny ph comments",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "phcmnt",
-                        "short_doc": "",
-                        "signature": "<user/id/mention><message>",
-                        "full_signature": "eru ( phcmnt | pornhubcomment ) <user/id/mention><message>",
-                        "usage": "<user/id/mention><message>",
-                        "sub_commands": null
-                    },
-                    "changemymind": {
-                        "aliases": [
-                            "cmm"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "change my mind",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "changemymind",
-                        "short_doc": "",
-                        "signature": "<message>",
-                        "full_signature": "eru ( changemymind | cmm ) <message>",
-                        "usage": "<message>",
-                        "sub_commands": null
-                    },
                     "pp": {
                         "aliases": [
                             "ppsize"
@@ -143,42 +86,42 @@ class Commands extends Component{
                         "usage": "<user name/user id>",
                         "sub_commands": null
                     },
-                    "ytcmnt": {
+                    "joke": {
                         "aliases": [
-                            "youtubecomment"
+                            "makejoke"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "create funny youtube comments",
+                        "description": "make a joke",
                         "enabled": true,
                         "extras": {},
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "ytcmnt",
+                        "name": "joke",
                         "short_doc": "",
-                        "signature": "<user/id/mention> <comment>",
-                        "full_signature": "eru ( ytcmnt | youtubecomment ) <user/id/mention> <comment>",
-                        "usage": "<user/id/mention> <comment>",
+                        "signature": "",
+                        "full_signature": "eru ( joke | makejoke ) ",
+                        "usage": null,
                         "sub_commands": null
                     },
-                    "tpde": {
+                    "phcmnt": {
                         "aliases": [
-                            "thispersondoesnotexist"
+                            "pornhubcomment"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "thispersondoesnotexist.com",
+                        "description": "create funny ph comments",
                         "enabled": true,
                         "extras": {},
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "tpde",
+                        "name": "phcmnt",
                         "short_doc": "",
-                        "signature": "experimental",
-                        "full_signature": "eru ( tpde | thispersondoesnotexist ) experimental",
-                        "usage": "experimental",
+                        "signature": "<user/id/mention><message>",
+                        "full_signature": "eru ( phcmnt | pornhubcomment ) <user/id/mention><message>",
+                        "usage": "<user/id/mention><message>",
                         "sub_commands": null
                     },
                     "gay": {
@@ -201,23 +144,118 @@ class Commands extends Component{
                         "usage": "<user id/user name>",
                         "sub_commands": null
                     },
-                    "wasted": {
+                    "changemymind": {
                         "aliases": [
-                            "wastedgta"
+                            "cmm"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "create wasted pic",
+                        "description": "change my mind",
                         "enabled": true,
                         "extras": {},
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "wasted",
+                        "name": "changemymind",
+                        "short_doc": "",
+                        "signature": "<message>",
+                        "full_signature": "eru ( changemymind | cmm ) <message>",
+                        "usage": "<message>",
+                        "sub_commands": null
+                    },
+                    "tweet": {
+                        "aliases": [
+                            "twiter"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "create funny tweets",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "tweet",
+                        "short_doc": "",
+                        "signature": "<user/id/mention> <tweet>",
+                        "full_signature": "eru ( tweet | twiter ) <user/id/mention> <tweet>",
+                        "usage": "<user/id/mention> <tweet>",
+                        "sub_commands": null
+                    },
+                    "ytcmnt": {
+                        "aliases": [
+                            "youtubecomment"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "create funny youtube comments",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "ytcmnt",
+                        "short_doc": "",
+                        "signature": "<user/id/mention> <comment>",
+                        "full_signature": "eru ( ytcmnt | youtubecomment ) <user/id/mention> <comment>",
+                        "usage": "<user/id/mention> <comment>",
+                        "sub_commands": null
+                    },
+                    "fakedc": {
+                        "aliases": [
+                            "dcmsg"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "create funny discord messages",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "fakedc",
+                        "short_doc": "",
+                        "signature": "<user/id/mention> <message>",
+                        "full_signature": "eru ( fakedc | dcmsg ) <user/id/mention> <message>",
+                        "usage": "<user/id/mention> <message>",
+                        "sub_commands": null
+                    },
+                    "threats": {
+                        "aliases": [
+                            "dangers"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "threats to society",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "threats",
                         "short_doc": "",
                         "signature": "<user/id/mention>",
-                        "full_signature": "eru ( wasted | wastedgta ) <user/id/mention>",
+                        "full_signature": "eru ( threats | dangers ) <user/id/mention>",
                         "usage": "<user/id/mention>",
+                        "sub_commands": null
+                    },
+                    "tpde": {
+                        "aliases": [
+                            "thispersondoesnotexist"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "thispersondoesnotexist.com",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "tpde",
+                        "short_doc": "",
+                        "signature": "experimental",
+                        "full_signature": "eru ( tpde | thispersondoesnotexist ) experimental",
+                        "usage": "experimental",
                         "sub_commands": null
                     },
                     "ship": {
@@ -240,25 +278,6 @@ class Commands extends Component{
                         "usage": "<user1>,<user2>",
                         "sub_commands": null
                     },
-                    "jail": {
-                        "aliases": [
-                            "prison"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "jail those users",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "jail",
-                        "short_doc": "",
-                        "signature": "<user/id/mention>",
-                        "full_signature": "eru ( jail | prison ) <user/id/mention>",
-                        "usage": "<user/id/mention>",
-                        "sub_commands": null
-                    },
                     "waifu": {
                         "aliases": [
                             "eru"
@@ -278,6 +297,44 @@ class Commands extends Component{
                         "usage": null,
                         "sub_commands": null
                     },
+                    "swirl": {
+                        "aliases": [
+                            "swirlimage"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "image filter",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "swirl",
+                        "short_doc": "",
+                        "signature": "<user/id/mention>",
+                        "full_signature": "eru ( swirl | swirlimage ) <user/id/mention>",
+                        "usage": "<user/id/mention>",
+                        "sub_commands": null
+                    },
+                    "trash": {
+                        "aliases": [
+                            "trashmeme"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "trash meme",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "trash",
+                        "short_doc": "",
+                        "signature": "<user/id/name>",
+                        "full_signature": "eru ( trash | trashmeme ) <user/id/name>",
+                        "usage": "<user/id/name>",
+                        "sub_commands": null
+                    },
                     "whygay": {
                         "aliases": [
                             "whygae"
@@ -295,25 +352,6 @@ class Commands extends Component{
                         "signature": "<user1/id/mention> <user2/id/mention>",
                         "full_signature": "eru ( whygay | whygae ) <user1/id/mention> <user2/id/mention>",
                         "usage": "<user1/id/mention> <user2/id/mention>",
-                        "sub_commands": null
-                    },
-                    "threats": {
-                        "aliases": [
-                            "dangers"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "threats to society",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "threats",
-                        "short_doc": "",
-                        "signature": "<user/id/mention>",
-                        "full_signature": "eru ( threats | dangers ) <user/id/mention>",
-                        "usage": "<user/id/mention>",
                         "sub_commands": null
                     },
                     "5g1g": {
@@ -354,23 +392,23 @@ class Commands extends Component{
                         "usage": "<user/id/mention>",
                         "sub_commands": null
                     },
-                    "trash": {
+                    "wasted": {
                         "aliases": [
-                            "trashmeme"
+                            "wastedgta"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "trash meme",
+                        "description": "create wasted pic",
                         "enabled": true,
                         "extras": {},
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "trash",
+                        "name": "wasted",
                         "short_doc": "",
-                        "signature": "<user/id/name>",
-                        "full_signature": "eru ( trash | trashmeme ) <user/id/name>",
-                        "usage": "<user/id/name>",
+                        "signature": "<user/id/mention>",
+                        "full_signature": "eru ( wasted | wastedgta ) <user/id/mention>",
+                        "usage": "<user/id/mention>",
                         "sub_commands": null
                     },
                     "trigger": {
@@ -389,25 +427,6 @@ class Commands extends Component{
                         "short_doc": "",
                         "signature": "<user/id/mention>",
                         "full_signature": "eru ( trigger | triggered ) <user/id/mention>",
-                        "usage": "<user/id/mention>",
-                        "sub_commands": null
-                    },
-                    "swirl": {
-                        "aliases": [
-                            "swirlimage"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "image filter",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "swirl",
-                        "short_doc": "",
-                        "signature": "<user/id/mention>",
-                        "full_signature": "eru ( swirl | swirlimage ) <user/id/mention>",
                         "usage": "<user/id/mention>",
                         "sub_commands": null
                     },
@@ -563,25 +582,6 @@ class Commands extends Component{
                         "usage": "<user/id/mention>",
                         "sub_commands": null
                     },
-                    "awo": {
-                        "aliases": [
-                            "eruuuu"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "awooo.....",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "awo",
-                        "short_doc": "",
-                        "signature": "",
-                        "full_signature": "eru ( awo | eruuuu ) ",
-                        "usage": null,
-                        "sub_commands": null
-                    },
                     "fedora": {
                         "aliases": [
                             "fedoraa"
@@ -601,25 +601,6 @@ class Commands extends Component{
                         "usage": "<user/id/mention>",
                         "sub_commands": null
                     },
-                    "invert": {
-                        "aliases": [
-                            "negativeimage"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "invert image colours",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "invert",
-                        "short_doc": "",
-                        "signature": "<user/id/mention>",
-                        "full_signature": "eru ( invert | negativeimage ) <user/id/mention>",
-                        "usage": "<user/id/mention>",
-                        "sub_commands": null
-                    },
                     "delthis": {
                         "aliases": [
                             "deletethis"
@@ -636,6 +617,44 @@ class Commands extends Component{
                         "short_doc": "",
                         "signature": "<user/id/mention>",
                         "full_signature": "eru ( delthis | deletethis ) <user/id/mention>",
+                        "usage": "<user/id/mention>",
+                        "sub_commands": null
+                    },
+                    "jail": {
+                        "aliases": [
+                            "prison"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "jail those users",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "jail",
+                        "short_doc": "",
+                        "signature": "<user/id/mention>",
+                        "full_signature": "eru ( jail | prison ) <user/id/mention>",
+                        "usage": "<user/id/mention>",
+                        "sub_commands": null
+                    },
+                    "invert": {
+                        "aliases": [
+                            "negativeimage"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "invert image colours",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "invert",
+                        "short_doc": "",
+                        "signature": "<user/id/mention>",
+                        "full_signature": "eru ( invert | negativeimage ) <user/id/mention>",
                         "usage": "<user/id/mention>",
                         "sub_commands": null
                     },
@@ -694,25 +713,6 @@ class Commands extends Component{
                         "signature": "<user/id/mention>",
                         "full_signature": "eru ( lego | legofy ) <user/id/mention>",
                         "usage": "<user/id/mention>",
-                        "sub_commands": null
-                    },
-                    "roast": {
-                        "aliases": [
-                            "roastthem"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "roast them folks",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "roast",
-                        "short_doc": "",
-                        "signature": "<user/id/mention or reply-message>",
-                        "full_signature": "eru ( roast | roastthem ) <user/id/mention or reply-message>",
-                        "usage": "<user/id/mention or reply-message>",
                         "sub_commands": null
                     },
                     "ascii": {
@@ -812,6 +812,26 @@ class Commands extends Component{
                         "usage": "<number of dice to roll>",
                         "sub_commands": null
                     },
+                    "kiss": {
+                        "aliases": [
+                            "kisses",
+                            "smooch"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "OwO, kiss",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "kiss",
+                        "short_doc": "",
+                        "signature": "<user name/user id>",
+                        "full_signature": "eru ( kiss | kisses | smooch ) <user name/user id>",
+                        "usage": "<user name/user id>",
+                        "sub_commands": null
+                    },
                     "rps": {
                         "aliases": [
                             "rockpaperscissor"
@@ -831,22 +851,22 @@ class Commands extends Component{
                         "usage": "[member/id/name/mention]",
                         "sub_commands": null
                     },
-                    "bully": {
+                    "pat": {
                         "aliases": [
-                            "bullies"
+                            "pats"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "no bully",
+                        "description": "owo i love pats",
                         "enabled": true,
                         "extras": {},
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "bully",
+                        "name": "pat",
                         "short_doc": "",
                         "signature": "<user name/user id>",
-                        "full_signature": "eru ( bully | bullies ) <user name/user id>",
+                        "full_signature": "eru ( pat | pats ) <user name/user id>",
                         "usage": "<user name/user id>",
                         "sub_commands": null
                     },
@@ -871,23 +891,22 @@ class Commands extends Component{
                         "usage": null,
                         "sub_commands": null
                     },
-                    "kiss": {
+                    "bully": {
                         "aliases": [
-                            "kisses",
-                            "smooch"
+                            "bullies"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "OwO, kiss",
+                        "description": "no bully",
                         "enabled": true,
                         "extras": {},
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "kiss",
+                        "name": "bully",
                         "short_doc": "",
                         "signature": "<user name/user id>",
-                        "full_signature": "eru ( kiss | kisses | smooch ) <user name/user id>",
+                        "full_signature": "eru ( bully | bullies ) <user name/user id>",
                         "usage": "<user name/user id>",
                         "sub_commands": null
                     },
@@ -926,25 +945,6 @@ class Commands extends Component{
                         "short_doc": "",
                         "signature": "<user name/user id>",
                         "full_signature": "eru ( nom | nomnom ) <user name/user id>",
-                        "usage": "<user name/user id>",
-                        "sub_commands": null
-                    },
-                    "pat": {
-                        "aliases": [
-                            "pats"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "owo i love pats",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "pat",
-                        "short_doc": "",
-                        "signature": "<user name/user id>",
-                        "full_signature": "eru ( pat | pats ) <user name/user id>",
                         "usage": "<user name/user id>",
                         "sub_commands": null
                     },
@@ -1044,25 +1044,6 @@ class Commands extends Component{
                         "usage": "<user name/user id>",
                         "sub_commands": null
                     },
-                    "bite": {
-                        "aliases": [
-                            "bites"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "bite them and show love",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "bite",
-                        "short_doc": "",
-                        "signature": "<user name/user id>",
-                        "full_signature": "eru ( bite | bites ) <user name/user id>",
-                        "usage": "<user name/user id>",
-                        "sub_commands": null
-                    },
                     "blush": {
                         "aliases": [
                             "blushes"
@@ -1079,6 +1060,25 @@ class Commands extends Component{
                         "short_doc": "",
                         "signature": "",
                         "full_signature": "eru ( blush | blushes ) ",
+                        "usage": null,
+                        "sub_commands": null
+                    },
+                    "awo": {
+                        "aliases": [
+                            "eruuuu"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "awooo.....",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "awo",
+                        "short_doc": "",
+                        "signature": "",
+                        "full_signature": "eru ( awo | eruuuu ) ",
                         "usage": null,
                         "sub_commands": null
                     },
@@ -1121,24 +1121,23 @@ class Commands extends Component{
                         "usage": "<user name/user id>",
                         "sub_commands": null
                     },
-                    "cry": {
+                    "bite": {
                         "aliases": [
-                            "crys",
-                            "cries"
+                            "bites"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "TwT, why cry ",
+                        "description": "bite them and show love",
                         "enabled": true,
                         "extras": {},
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "cry",
+                        "name": "bite",
                         "short_doc": "",
-                        "signature": "",
-                        "full_signature": "eru ( cry | crys | cries ) ",
-                        "usage": null,
+                        "signature": "<user name/user id>",
+                        "full_signature": "eru ( bite | bites ) <user name/user id>",
+                        "usage": "<user name/user id>",
                         "sub_commands": null
                     },
                     "kill": {
@@ -1160,25 +1159,6 @@ class Commands extends Component{
                         "usage": "<user name/user id>",
                         "sub_commands": null
                     },
-                    "truth": {
-                        "aliases": [
-                            "turthonly"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "truth or truth",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "truth",
-                        "short_doc": "",
-                        "signature": "",
-                        "full_signature": "eru ( truth | turthonly ) ",
-                        "usage": null,
-                        "sub_commands": null
-                    },
                     "smug": {
                         "aliases": [
                             "smugs"
@@ -1195,6 +1175,26 @@ class Commands extends Component{
                         "short_doc": "",
                         "signature": "",
                         "full_signature": "eru ( smug | smugs ) ",
+                        "usage": null,
+                        "sub_commands": null
+                    },
+                    "cry": {
+                        "aliases": [
+                            "crys",
+                            "cries"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "TwT, why cry ",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "cry",
+                        "short_doc": "",
+                        "signature": "",
+                        "full_signature": "eru ( cry | crys | cries ) ",
                         "usage": null,
                         "sub_commands": null
                     },
@@ -1218,24 +1218,609 @@ class Commands extends Component{
                         "usage": null,
                         "sub_commands": null
                     },
-                    "pickup": {
+                    "roast": {
                         "aliases": [
-                            "pickupline"
+                            "roastthem"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "try juicy pickup lines",
+                        "description": "roast them folks",
                         "enabled": true,
                         "extras": {},
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "pickup",
+                        "name": "roast",
                         "short_doc": "",
-                        "signature": "<user/id/mention>",
-                        "full_signature": "eru ( pickup | pickupline ) <user/id/mention>",
-                        "usage": "<user/id/mention>",
+                        "signature": "<user/id/mention or reply-message>",
+                        "full_signature": "eru ( roast | roastthem ) <user/id/mention or reply-message>",
+                        "usage": "<user/id/mention or reply-message>",
                         "sub_commands": null
+                    }
+                },
+                "games": {
+                    "karuta": {
+                        "aliases": [
+                            "k",
+                            "karutamod"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "karuta moderator commands",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "karuta",
+                        "short_doc": "",
+                        "signature": "<sub commands>",
+                        "full_signature": "eru ( karuta | k | karutamod ) <sub commands>",
+                        "usage": "<sub commands>",
+                        "sub_commands": {
+                            "epicrole": {
+                                "aliases": [
+                                    "erole",
+                                    "epicpingrole"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Set ping role for cards above 800wl",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "karuta",
+                                "name": "epicrole",
+                                "short_doc": "",
+                                "signature": "<role name/role id>",
+                                "full_signature": "eru (karuta | k  | karutamod ) ( epicrole | erole | epicpingrole ) <role name/role id>",
+                                "usage": "<role name/role id>",
+                                "sub_commands": null
+                            },
+                            "disable": {
+                                "aliases": [
+                                    "ds"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "disable pings",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "karuta",
+                                "name": "disable",
+                                "short_doc": "",
+                                "signature": "<pingtype>",
+                                "full_signature": "eru (karuta | k  | karutamod ) ( disable | ds ) <pingtype>",
+                                "usage": "<pingtype>",
+                                "sub_commands": null
+                            },
+                            "eventrole": {
+                                "aliases": [
+                                    "evrole"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "<:beta:941321545459056671> Set ping role for event drops",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "karuta",
+                                "name": "eventrole",
+                                "short_doc": "",
+                                "signature": "<role name/role id>",
+                                "full_signature": "eru (karuta | k  | karutamod ) ( eventrole | evrole ) <role name/role id>",
+                                "usage": "<role name/role id>",
+                                "sub_commands": null
+                            },
+                            "rarerole": {
+                                "aliases": [
+                                    "rrole",
+                                    "rarepingrole"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "<:beta:941321545459056671> Set ping role for cards 200wl to 800wl",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "karuta",
+                                "name": "rarerole",
+                                "short_doc": "",
+                                "signature": "<role name/role id>",
+                                "full_signature": "eru (karuta | k  | karutamod ) ( rarerole | rrole | rarepingrole ) <role name/role id>",
+                                "usage": "<role name/role id>",
+                                "sub_commands": null
+                            },
+                            "pingstatus": {
+                                "aliases": [
+                                    "ping"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Enable/Disable karuta ping",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "karuta",
+                                "name": "pingstatus",
+                                "short_doc": "",
+                                "signature": "<enable/disable>",
+                                "full_signature": "eru (karuta | k  | karutamod ) ( pingstatus | ping ) <enable/disable>",
+                                "usage": "<enable/disable>",
+                                "sub_commands": null
+                            },
+                            "wishlistrole": {
+                                "aliases": [
+                                    "wlrole"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "<:beta:941321545459056671> Set ping role for whishlist ping",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "karuta",
+                                "name": "wishlistrole",
+                                "short_doc": "",
+                                "signature": "<role name/role id>",
+                                "full_signature": "eru (karuta | k  | karutamod ) ( wishlistrole | wlrole ) <role name/role id>",
+                                "usage": "<role name/role id>",
+                                "sub_commands": null
+                            },
+                            "config": {
+                                "aliases": [
+                                    "cf"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "current karuta configs",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "karuta",
+                                "name": "config",
+                                "short_doc": "",
+                                "signature": "",
+                                "full_signature": "eru (karuta | k  | karutamod ) ( config | cf ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "pingrole": {
+                                "aliases": [
+                                    "prole",
+                                    "role"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Set ping role",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "karuta",
+                                "name": "pingrole",
+                                "short_doc": "",
+                                "signature": "<role name/role id>",
+                                "full_signature": "eru (karuta | k  | karutamod ) ( pingrole | prole | role ) <role name/role id>",
+                                "usage": "<role name/role id>",
+                                "sub_commands": null
+                            }
+                        }
+                    },
+                    "sofi": {
+                        "aliases": [
+                            "sofimod",
+                            "s"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "help gacha",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "sofi",
+                        "short_doc": "",
+                        "signature": "<sub commands>",
+                        "full_signature": "eru ( sofi | sofimod | s ) <sub commands>",
+                        "usage": "<sub commands>",
+                        "sub_commands": {
+                            "voterole": {
+                                "aliases": [
+                                    "vorl"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Set ping role",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "sofi",
+                                "name": "voterole",
+                                "short_doc": "",
+                                "signature": "<role name/role id>",
+                                "full_signature": "eru (sofi | sofimod  | s ) ( voterole | vorl ) <role name/role id>",
+                                "usage": "<role name/role id>",
+                                "sub_commands": null
+                            },
+                            "pingstatus": {
+                                "aliases": [
+                                    "ping"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Enable/Disable sofi ping",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "sofi",
+                                "name": "pingstatus",
+                                "short_doc": "",
+                                "signature": "<enable/disable>",
+                                "full_signature": "eru (sofi | sofimod  | s ) ( pingstatus | ping ) <enable/disable>",
+                                "usage": "<enable/disable>",
+                                "sub_commands": null
+                            },
+                            "minirole": {
+                                "aliases": [
+                                    "mgrl",
+                                    "minigamerole"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Set ping role",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "sofi",
+                                "name": "minirole",
+                                "short_doc": "",
+                                "signature": "<role name/role id>",
+                                "full_signature": "eru (sofi | sofimod  | s ) ( minirole | mgrl | minigamerole ) <role name/role id>",
+                                "usage": "<role name/role id>",
+                                "sub_commands": null
+                            },
+                            "config": {
+                                "aliases": [
+                                    "cf"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "current sofi configs",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "sofi",
+                                "name": "config",
+                                "short_doc": "",
+                                "signature": "",
+                                "full_signature": "eru (sofi | sofimod  | s ) ( config | cf ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "disable": {
+                                "aliases": [
+                                    "ds"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "disable pings",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "sofi",
+                                "name": "disable",
+                                "short_doc": "",
+                                "signature": "<pingtype>",
+                                "full_signature": "eru (sofi | sofimod  | s ) ( disable | ds ) <pingtype>",
+                                "usage": "<pingtype>",
+                                "sub_commands": null
+                            }
+                        }
+                    },
+                    "cooldown": {
+                        "aliases": [
+                            "cd"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "cooldown ping",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "cooldown",
+                        "short_doc": "",
+                        "signature": "",
+                        "full_signature": "eru ( cooldown | cd ) ",
+                        "usage": null,
+                        "sub_commands": null
+                    },
+                    "gacha": {
+                        "aliases": [
+                            "gmod",
+                            "gachamod",
+                            "ga"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "help gacha",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "gacha",
+                        "short_doc": "",
+                        "signature": "<sub commands>",
+                        "full_signature": "eru ( gacha | gmod | gachamod | ga ) <sub commands>",
+                        "usage": "<sub commands>",
+                        "sub_commands": {
+                            "pingstatus": {
+                                "aliases": [
+                                    "ping"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Enable/Disable gachapon ping",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "gacha",
+                                "name": "pingstatus",
+                                "short_doc": "",
+                                "signature": "<enanble/disable>",
+                                "full_signature": "eru (gacha | gmod  | gachamod  | ga ) ( pingstatus | ping ) <enanble/disable>",
+                                "usage": "<enanble/disable>",
+                                "sub_commands": null
+                            },
+                            "disable": {
+                                "aliases": [
+                                    "ds"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "disable pings",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "gacha",
+                                "name": "disable",
+                                "short_doc": "",
+                                "signature": "<pingtype>",
+                                "full_signature": "eru (gacha | gmod  | gachamod  | ga ) ( disable | ds ) <pingtype>",
+                                "usage": "<pingtype>",
+                                "sub_commands": null
+                            },
+                            "config": {
+                                "aliases": [
+                                    "cf"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "current gacha configs",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "gacha",
+                                "name": "config",
+                                "short_doc": "",
+                                "signature": "",
+                                "full_signature": "eru (gacha | gmod  | gachamod  | ga ) ( config | cf ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "pingrole": {
+                                "aliases": [
+                                    "role"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Set ping role",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "gacha",
+                                "name": "pingrole",
+                                "short_doc": "",
+                                "signature": "<role name/role id>",
+                                "full_signature": "eru (gacha | gmod  | gachamod  | ga ) ( pingrole | role ) <role name/role id>",
+                                "usage": "<role name/role id>",
+                                "sub_commands": null
+                            }
+                        }
+                    },
+                    "frame": {
+                        "aliases": [
+                            "frametest",
+                            "testframe"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "test frames on your cards",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "frame",
+                        "short_doc": "",
+                        "signature": "",
+                        "full_signature": "eru ( frame | frametest | testframe ) ",
+                        "usage": null,
+                        "sub_commands": null
+                    },
+                    "vcgame": {
+                        "aliases": [
+                            "vg"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "<:beta:941321545459056671> voice activity games",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "vcgame",
+                        "short_doc": "",
+                        "signature": "<game name>",
+                        "full_signature": "eru ( vcgame | vg ) <game name>",
+                        "usage": "<game name>",
+                        "sub_commands": {
+                            "sketchheads": {
+                                "aliases": [
+                                    "sh"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Sketch Heads",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "vcgame",
+                                "name": "sketchheads",
+                                "short_doc": "",
+                                "signature": "",
+                                "full_signature": "eru (vcgame | vg ) ( sketchheads | sh ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "betrayal": {
+                                "aliases": [
+                                    "bet"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Betrayal.io",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "vcgame",
+                                "name": "betrayal",
+                                "short_doc": "",
+                                "signature": "",
+                                "full_signature": "eru (vcgame | vg ) ( betrayal | bet ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "chess": {
+                                "aliases": [
+                                    "chs"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Chess in the Park",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "vcgame",
+                                "name": "chess",
+                                "short_doc": "",
+                                "signature": "",
+                                "full_signature": "eru (vcgame | vg ) ( chess | chs ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "checkers": {
+                                "aliases": [
+                                    "chk"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Checkers in the Park",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "vcgame",
+                                "name": "checkers",
+                                "short_doc": "",
+                                "signature": "",
+                                "full_signature": "eru (vcgame | vg ) ( checkers | chk ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "fishington": {
+                                "aliases": [
+                                    "fish"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Fishington.io",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "vcgame",
+                                "name": "fishington",
+                                "short_doc": "",
+                                "signature": "",
+                                "full_signature": "eru (vcgame | vg ) ( fishington | fish ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "letterleague": {
+                                "aliases": [
+                                    "ll"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Letter League",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "vcgame",
+                                "name": "letterleague",
+                                "short_doc": "",
+                                "signature": "",
+                                "full_signature": "eru (vcgame | vg ) ( letterleague | ll ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "poker": {
+                                "aliases": [
+                                    "pkr"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Poker Night",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "vcgame",
+                                "name": "poker",
+                                "short_doc": "",
+                                "signature": "",
+                                "full_signature": "eru (vcgame | vg ) ( poker | pkr ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            }
+                        }
                     }
                 },
                 "helpful": {
@@ -1278,6 +1863,26 @@ class Commands extends Component{
                         "usage": null,
                         "sub_commands": null
                     },
+                    "stats": {
+                        "aliases": [
+                            "botstats",
+                            "about"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "Check bots stats!!",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "stats",
+                        "short_doc": "",
+                        "signature": "",
+                        "full_signature": "eru ( stats | botstats | about ) ",
+                        "usage": null,
+                        "sub_commands": null
+                    },
                     "support": {
                         "aliases": [
                             "sup"
@@ -1297,23 +1902,22 @@ class Commands extends Component{
                         "usage": null,
                         "sub_commands": null
                     },
-                    "stats": {
+                    "help": {
                         "aliases": [
-                            "botstats",
-                            "about"
+                            "helps"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "Check bots stats!!",
+                        "description": "I will help you",
                         "enabled": true,
                         "extras": {},
-                        "help": null,
+                        "help": "Shows this message",
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "stats",
-                        "short_doc": "",
-                        "signature": "",
-                        "full_signature": "eru ( stats | botstats | about ) ",
+                        "name": "help",
+                        "short_doc": "Shows this message",
+                        "signature": "[command=None] [interaction=None]",
+                        "full_signature": "eru ( help | helps ) [command=None] [interaction=None]",
                         "usage": null,
                         "sub_commands": null
                     },
@@ -1336,311 +1940,29 @@ class Commands extends Component{
                         "full_signature": "eru ( feedback | suggestions | report ) [message=None]",
                         "usage": null,
                         "sub_commands": null
-                    },
-                    "help": {
-                        "aliases": [
-                            "helps"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "I will help you",
-                        "enabled": true,
-                        "extras": {},
-                        "help": "Shows this message",
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "help",
-                        "short_doc": "Shows this message",
-                        "signature": "[command=None] [interaction=None]",
-                        "full_signature": "eru ( help | helps ) [command=None] [interaction=None]",
-                        "usage": null,
-                        "sub_commands": null
                     }
                 },
                 "moderation": {
-                    "commands": {
+                    "unban": {
                         "aliases": [
-                            "cmmds"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "Check disabled commands/categories in currenct channel",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "commands",
-                        "short_doc": "",
-                        "signature": "",
-                        "full_signature": "eru ( commands | cmmds ) ",
-                        "usage": null,
-                        "sub_commands": {
-                            "reset": {
-                                "aliases": [
-                                    "resetchannel"
-                                ],
-                                "brief": null,
-                                "checks": [],
-                                "description": "Resets channel commands",
-                                "enabled": true,
-                                "extras": {},
-                                "help": null,
-                                "hidden": false,
-                                "full_parent_name": "commands",
-                                "name": "reset",
-                                "short_doc": "",
-                                "signature": "<channel/id/mention>",
-                                "full_signature": "eru (commands | cmmds ) ( reset | resetchannel ) <channel/id/mention>",
-                                "usage": "<channel/id/mention>",
-                                "sub_commands": null
-                            },
-                            "guildreset": {
-                                "aliases": [
-                                    "rsg"
-                                ],
-                                "brief": null,
-                                "checks": [],
-                                "description": "Resets Guild commands",
-                                "enabled": true,
-                                "extras": {},
-                                "help": null,
-                                "hidden": false,
-                                "full_parent_name": "commands",
-                                "name": "guildreset",
-                                "short_doc": "",
-                                "signature": "",
-                                "full_signature": "eru (commands | cmmds ) ( guildreset | rsg ) ",
-                                "usage": null,
-                                "sub_commands": null
-                            },
-                            "stats": {
-                                "aliases": [
-                                    "status"
-                                ],
-                                "brief": null,
-                                "checks": [],
-                                "description": "Resets channel commands",
-                                "enabled": true,
-                                "extras": {},
-                                "help": null,
-                                "hidden": false,
-                                "full_parent_name": "commands",
-                                "name": "stats",
-                                "short_doc": "",
-                                "signature": "<channel/id/mention>",
-                                "full_signature": "eru (commands | cmmds ) ( stats | status ) <channel/id/mention>",
-                                "usage": "<channel/id/mention>",
-                                "sub_commands": null
-                            }
-                        }
-                    },
-                    "purge": {
-                        "aliases": [
-                            "clean"
+                            "unyeet"
                         ],
                         "brief": null,
                         "checks": [
-                            "manage_guild",
-                            "manage_messages",
+                            "ban_members",
                             "administrator"
                         ],
-                        "description": "Delete Messages in the channel",
+                        "description": "Unban them good users",
                         "enabled": true,
                         "extras": {},
-                        "help": null,
+                        "help": "Unban Users",
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "purge",
-                        "short_doc": "",
-                        "signature": "",
-                        "full_signature": "eru ( purge | clean ) ",
-                        "usage": null,
-                        "sub_commands": {
-                            "embed": {
-                                "aliases": [
-                                    "em"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "manage_messages",
-                                    "manage_guild"
-                                ],
-                                "description": "",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Removes messages that have embeds in them.",
-                                "hidden": false,
-                                "full_parent_name": "purge",
-                                "name": "embed",
-                                "short_doc": "Removes messages that have embeds in them.",
-                                "signature": "[search=100]",
-                                "full_signature": "eru (purge | clean ) ( embed | em ) [search=100]",
-                                "usage": null,
-                                "sub_commands": null
-                            },
-                            "bots": {
-                                "aliases": [
-                                    "bot"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "manage_messages",
-                                    "manage_guild"
-                                ],
-                                "description": "",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Removes a bot user's messages and messages with their optional prefix.",
-                                "hidden": false,
-                                "full_parent_name": "purge",
-                                "name": "bots",
-                                "short_doc": "Removes a bot user's messages and messages with their optional prefix.",
-                                "signature": "[prefix=None] [search=100]",
-                                "full_signature": "eru (purge | clean ) ( bots | bot ) [prefix=None] [search=100]",
-                                "usage": null,
-                                "sub_commands": null
-                            },
-                            "user": {
-                                "aliases": [
-                                    "us"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "manage_messages",
-                                    "manage_guild"
-                                ],
-                                "description": "",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Removes all messages by the member.",
-                                "hidden": false,
-                                "full_parent_name": "purge",
-                                "name": "user",
-                                "short_doc": "Removes all messages by the member.",
-                                "signature": "<member> [search=100]",
-                                "full_signature": "eru (purge | clean ) ( user | us ) <member> [search=100]",
-                                "usage": null,
-                                "sub_commands": null
-                            },
-                            "attachments": {
-                                "aliases": [
-                                    "attc",
-                                    "files"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "manage_messages",
-                                    "manage_guild"
-                                ],
-                                "description": "",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Removes messages that have embeds or attachments.",
-                                "hidden": false,
-                                "full_parent_name": "purge",
-                                "name": "attachments",
-                                "short_doc": "Removes messages that have embeds or attachments.",
-                                "signature": "[search=100]",
-                                "full_signature": "eru (purge | clean ) ( attachments | attc | files ) [search=100]",
-                                "usage": null,
-                                "sub_commands": null
-                            },
-                            "contains": {
-                                "aliases": [
-                                    "ct"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "manage_messages",
-                                    "manage_guild"
-                                ],
-                                "description": "",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Removes all messages containing a substring.\nThe substring must be at least 3 characters long.",
-                                "hidden": false,
-                                "full_parent_name": "purge",
-                                "name": "contains",
-                                "short_doc": "Removes all messages containing a substring.",
-                                "signature": "<substr>",
-                                "full_signature": "eru (purge | clean ) ( contains | ct ) <substr>",
-                                "usage": null,
-                                "sub_commands": null
-                            },
-                            "all": {
-                                "aliases": [
-                                    "a"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "manage_messages",
-                                    "manage_guild"
-                                ],
-                                "description": "",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Removes all messages.",
-                                "hidden": false,
-                                "full_parent_name": "purge",
-                                "name": "all",
-                                "short_doc": "Removes all messages.",
-                                "signature": "[search=100]",
-                                "full_signature": "eru (purge | clean ) ( all | a ) [search=100]",
-                                "usage": null,
-                                "sub_commands": null
-                            },
-                            "reactions": {
-                                "aliases": [
-                                    "rc"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "manage_messages",
-                                    "manage_guild"
-                                ],
-                                "description": "",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Removes all reactions from messages that have them.",
-                                "hidden": false,
-                                "full_parent_name": "purge",
-                                "name": "reactions",
-                                "short_doc": "Removes all reactions from messages that have them.",
-                                "signature": "[search=100]",
-                                "full_signature": "eru (purge | clean ) ( reactions | rc ) [search=100]",
-                                "usage": null,
-                                "sub_commands": null
-                            }
-                        }
-                    },
-                    "prefix": {
-                        "aliases": [
-                            "pre"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "Want to change or check my prefix?",
-                        "enabled": true,
-                        "extras": {
-                            "example": "eru prefix\neru prefix e!",
-                            "gif": null
-                        },
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "prefix",
-                        "short_doc": "",
-                        "signature": "<prefix>",
-                        "full_signature": "eru ( prefix | pre ) <prefix>",
-                        "usage": "<prefix>",
+                        "name": "unban",
+                        "short_doc": "Unban Users",
+                        "signature": "<user id/s> [reason]",
+                        "full_signature": "eru ( unban | unyeet ) <user id/s> [reason]",
+                        "usage": "<user id/s> [reason]",
                         "sub_commands": null
                     },
                     "ban": {
@@ -1665,99 +1987,33 @@ class Commands extends Component{
                         "usage": "<user/id/name/mention/s> [reason]",
                         "sub_commands": null
                     },
-                    "addsticker": {
+                    "pardon": {
                         "aliases": [
-                            "addstick"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "experimental",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "addsticker",
-                        "short_doc": "",
-                        "signature": "experimental",
-                        "full_signature": "eru ( addsticker | addstick ) experimental",
-                        "usage": "experimental",
-                        "sub_commands": null
-                    },
-                    "removeemote": {
-                        "aliases": [
-                            "rmemoji",
-                            "rmemote"
+                            "removestrikes"
                         ],
                         "brief": null,
                         "checks": [
-                            "manage_emojis",
-                            "manage_emojis_and_stickers",
-                            "manage_guild",
-                            "administrator"
+                            "administrator",
+                            "manage_permissions",
+                            "manage_roles",
+                            "manage_guild"
                         ],
-                        "description": "Remove emote/s",
+                        "description": "Remove all strikes from user",
                         "enabled": true,
                         "extras": {},
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "removeemote",
+                        "name": "pardon",
                         "short_doc": "",
-                        "signature": "<emote/s>",
-                        "full_signature": "eru ( removeemote | rmemoji | rmemote ) <emote/s>",
-                        "usage": "<emote/s>",
+                        "signature": "<user/id/mention>",
+                        "full_signature": "eru ( pardon | removestrikes ) <user/id/mention>",
+                        "usage": "<user/id/mention>",
                         "sub_commands": null
                     },
-                    "disable": {
+                    "verification": {
                         "aliases": [
-                            "ds"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "Disable commands/categories in current channel",
-                        "enabled": true,
-                        "extras": {
-                            "example": "eru disable helpful\ne! disable ping",
-                            "gif": null
-                        },
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "disable",
-                        "short_doc": "",
-                        "signature": "<Commands/Categories>",
-                        "full_signature": "eru ( disable | ds ) <Commands/Categories>",
-                        "usage": "<Commands/Categories>",
-                        "sub_commands": null
-                    },
-                    "addemote": {
-                        "aliases": [
-                            "addemoji"
-                        ],
-                        "brief": null,
-                        "checks": [
-                            "manage_emojis",
-                            "manage_emojis_and_stickers",
-                            "manage_guild",
-                            "administrator"
-                        ],
-                        "description": "Add emoji/s",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "addemote",
-                        "short_doc": "",
-                        "signature": "<name> <image>",
-                        "full_signature": "eru ( addemote | addemoji ) <name> <image>",
-                        "usage": "<name> <image>",
-                        "sub_commands": null
-                    },
-                    "automod": {
-                        "aliases": [
-                            "antiraid"
+                            "verificationlevel"
                         ],
                         "brief": null,
                         "checks": [
@@ -1765,201 +2021,41 @@ class Commands extends Component{
                             "ban_members",
                             "administrator"
                         ],
-                        "description": "Raid mode config",
+                        "description": "Set verification level",
                         "enabled": true,
                         "extras": {},
-                        "help": "Controls raid mode on the server.\nCalling this command with no arguments will show the current raid\nmode information.\nYou must have Manage Server permissions to use this command or\nits subcommands.",
+                        "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "automod",
-                        "short_doc": "Controls raid mode on the server.",
-                        "signature": "",
-                        "full_signature": "eru ( automod | antiraid ) ",
-                        "usage": null,
-                        "sub_commands": {
-                            "unignore": {
-                                "aliases": [
-                                    "protect"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "ban_members",
-                                    "manage_guild"
-                                ],
-                                "description": "Remove channels from mentionspam ignore list",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Specifies what channels to take off the ignore list.\nTo use this command you must have the Ban Members permission.",
-                                "hidden": false,
-                                "full_parent_name": "automod",
-                                "name": "unignore",
-                                "short_doc": "Specifies what channels to take off the ignore list.",
-                                "signature": "<Channels/id/mention>",
-                                "full_signature": "eru (automod | antiraid ) ( unignore | protect ) <Channels/id/mention>",
-                                "usage": "<Channels/id/mention>",
-                                "sub_commands": null
-                            },
-                            "disable": {
-                                "aliases": [
-                                    "disabled",
-                                    "off"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "ban_members",
-                                    "manage_guild"
-                                ],
-                                "description": "Disables raid mode",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Disables raid mode on the server.\nWhen disabled, the server verification levels are set\nback to Low levels and the bot will stop broadcasting\njoin messages.",
-                                "hidden": false,
-                                "full_parent_name": "automod",
-                                "name": "disable",
-                                "short_doc": "Disables raid mode on the server.",
-                                "signature": "",
-                                "full_signature": "eru (automod | antiraid ) ( disable | disabled | off ) ",
-                                "usage": null,
-                                "sub_commands": null
-                            },
-                            "ignore": {
-                                "aliases": [
-                                    "bypass"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "ban_members",
-                                    "manage_guild"
-                                ],
-                                "description": "Add channels to be ignored for mentionspam",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Specifies what channels ignore mentionspam auto-bans.\nIf a channel is given then that channel will no longer be protected\nby auto-banning from mention spammers.\nTo use this command you must have the Ban Members permission.",
-                                "hidden": false,
-                                "full_parent_name": "automod",
-                                "name": "ignore",
-                                "short_doc": "Specifies what channels ignore mentionspam auto-bans.",
-                                "signature": "<Channels/id/mention>",
-                                "full_signature": "eru (automod | antiraid ) ( ignore | bypass ) <Channels/id/mention>",
-                                "usage": "<Channels/id/mention>",
-                                "sub_commands": null
-                            },
-                            "enable": {
-                                "aliases": [
-                                    "enabled",
-                                    "on"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "ban_members",
-                                    "manage_guild"
-                                ],
-                                "description": "Enables basic raid mode",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Enables basic raid mode on the server.\nWhen enabled, server verification level is set to high\nand allows the bot to broadcast new members joining\nto a specified channel.\nIf no channel is given, then the bot will broadcast join\nmessages on the channel this command was used in.",
-                                "hidden": false,
-                                "full_parent_name": "automod",
-                                "name": "enable",
-                                "short_doc": "Enables basic raid mode on the server.",
-                                "signature": "<Channel/id/mention>",
-                                "full_signature": "eru (automod | antiraid ) ( enable | enabled | on ) <Channel/id/mention>",
-                                "usage": "<Channel/id/mention>",
-                                "sub_commands": null
-                            },
-                            "verification": {
-                                "aliases": [
-                                    "verificationlevel"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "ban_members",
-                                    "manage_guild"
-                                ],
-                                "description": "Set verification level",
-                                "enabled": true,
-                                "extras": {},
-                                "help": null,
-                                "hidden": false,
-                                "full_parent_name": "automod",
-                                "name": "verification",
-                                "short_doc": "",
-                                "signature": "<highest/high/medium/low/none>",
-                                "full_signature": "eru (automod | antiraid ) ( verification | verificationlevel ) <highest/high/medium/low/none>",
-                                "usage": "<highest/high/medium/low/none>",
-                                "sub_commands": null
-                            },
-                            "mentionspam": {
-                                "aliases": [],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "ban_members",
-                                    "manage_guild"
-                                ],
-                                "description": "Auto ban for mention spam",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Enables auto-banning accounts that spam mentions.\nIf a message contains `count` or more mentions then the\nbot will automatically attempt to auto-ban the member.\nThe `count` must be greater than 3. If the `count` is 0\nthen this is disabled.\nThis only applies for user mentions. Everyone or Role\nmentions are not included.\nTo use this command you must have the Ban Members permission.",
-                                "hidden": false,
-                                "full_parent_name": "automod",
-                                "name": "mentionspam",
-                                "short_doc": "Enables auto-banning accounts that spam mentions.",
-                                "signature": "<count>",
-                                "full_signature": "eru (automod | antiraid ) mentionspam <count>",
-                                "usage": "<count>",
-                                "sub_commands": null
-                            },
-                            "strict": {
-                                "aliases": [
-                                    "str"
-                                ],
-                                "brief": null,
-                                "checks": [
-                                    "administrator",
-                                    "ban_members",
-                                    "manage_guild"
-                                ],
-                                "description": "Enables strict raid mode (Auto Mod)",
-                                "enabled": true,
-                                "extras": {},
-                                "help": "Enables strict raid mode on the server.\nStrict mode is similar to regular enabled raid mode, with the added\nbenefit of auto-banning members that are spamming. The threshold for\nspamming depends on a per-content basis and also on a per-user basis\nof 15 messages per 17 seconds.\nIf this is considered too strict, it is recommended to fall back to regular\nraid mode.",
-                                "hidden": false,
-                                "full_parent_name": "automod",
-                                "name": "strict",
-                                "short_doc": "Enables strict raid mode on the server.",
-                                "signature": "<Channel/id/mention>",
-                                "full_signature": "eru (automod | antiraid ) ( strict | str ) <Channel/id/mention>",
-                                "usage": "<Channel/id/mention>",
-                                "sub_commands": null
-                            }
-                        }
+                        "name": "verification",
+                        "short_doc": "",
+                        "signature": "<highest/high/medium/low/none>",
+                        "full_signature": "eru ( verification | verificationlevel ) <highest/high/medium/low/none>",
+                        "usage": "<highest/high/medium/low/none>",
+                        "sub_commands": null
                     },
-                    "unban": {
+                    "warn": {
                         "aliases": [
-                            "unyeet"
+                            "addstrike"
                         ],
                         "brief": null,
                         "checks": [
-                            "ban_members",
-                            "administrator"
+                            "administrator",
+                            "manage_permissions",
+                            "manage_roles",
+                            "manage_guild"
                         ],
-                        "description": "Unban them good users",
+                        "description": "Add strike to user",
                         "enabled": true,
                         "extras": {},
-                        "help": "Unban Users",
+                        "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "unban",
-                        "short_doc": "Unban Users",
-                        "signature": "<user id/s> [reason]",
-                        "full_signature": "eru ( unban | unyeet ) <user id/s> [reason]",
-                        "usage": "<user id/s> [reason]",
+                        "name": "warn",
+                        "short_doc": "",
+                        "signature": "<user/id/name/mention> <reason>",
+                        "full_signature": "eru ( warn | addstrike ) <user/id/name/mention> <reason>",
+                        "usage": "<user/id/name/mention> <reason>",
                         "sub_commands": null
                     },
                     "addrole": {
@@ -1986,96 +2082,6 @@ class Commands extends Component{
                         "usage": "<user/id/name/mention/s> <role/id/name/mention/s> [reason]",
                         "sub_commands": null
                     },
-                    "lock": {
-                        "aliases": [
-                            "lockdown"
-                        ],
-                        "brief": null,
-                        "checks": [
-                            "manage_guild",
-                            "administrator"
-                        ],
-                        "description": "Lock channel",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "lock",
-                        "short_doc": "",
-                        "signature": "<channel/id/name/mention>",
-                        "full_signature": "eru ( lock | lockdown ) <channel/id/name/mention>",
-                        "usage": "<channel/id/name/mention>",
-                        "sub_commands": null
-                    },
-                    "removerole": {
-                        "aliases": [
-                            "removeroles"
-                        ],
-                        "brief": null,
-                        "checks": [
-                            "administrator",
-                            "manage_permissions",
-                            "manage_roles",
-                            "manage_guild"
-                        ],
-                        "description": "Remove role/s to user/s",
-                        "enabled": true,
-                        "extras": {},
-                        "help": "Remove role/s to member/s",
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "removerole",
-                        "short_doc": "Remove role/s to member/s",
-                        "signature": "<user/id/name/mention/s> <role/id/name/mention/s> [reason]",
-                        "full_signature": "eru ( removerole | removeroles ) <user/id/name/mention/s> <role/id/name/mention/s> [reason]",
-                        "usage": "<user/id/name/mention/s> <role/id/name/mention/s> [reason]",
-                        "sub_commands": null
-                    },
-                    "newusers": {
-                        "aliases": [
-                            "newmembers"
-                        ],
-                        "brief": null,
-                        "checks": [
-                            "administrator",
-                            "manage_guild"
-                        ],
-                        "description": "Get info of recently joined users",
-                        "enabled": true,
-                        "extras": {},
-                        "help": "Tells you the newest members of the server.\nThis is useful to check if any suspicious members have\njoined.\nThe count parameter can only be up to 25.",
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "newusers",
-                        "short_doc": "Tells you the newest members of the server.",
-                        "signature": "<count>",
-                        "full_signature": "eru ( newusers | newmembers ) <count>",
-                        "usage": "<count>",
-                        "sub_commands": null
-                    },
-                    "unlock": {
-                        "aliases": [
-                            "unlockdown"
-                        ],
-                        "brief": null,
-                        "checks": [
-                            "manage_guild",
-                            "administrator"
-                        ],
-                        "description": "Unock channel",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "unlock",
-                        "short_doc": "",
-                        "signature": "<channel/id/name/mention>",
-                        "full_signature": "eru ( unlock | unlockdown ) <channel/id/name/mention>",
-                        "usage": "<channel/id/name/mention>",
-                        "sub_commands": null
-                    },
                     "kick": {
                         "aliases": [
                             "softyeet"
@@ -2097,6 +2103,473 @@ class Commands extends Component{
                         "full_signature": "eru ( kick | softyeet ) <user/id/name/mention/s> [reason]",
                         "usage": "<user/id/name/mention/s> [reason]",
                         "sub_commands": null
+                    },
+                    "automod": {
+                        "aliases": [
+                            "automods"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "manage_guild",
+                            "ban_members",
+                            "administrator"
+                        ],
+                        "description": "Auto Mod Configs",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "automod",
+                        "short_doc": "",
+                        "signature": "",
+                        "full_signature": "eru ( automod | automods ) ",
+                        "usage": null,
+                        "sub_commands": {
+                            "config": {
+                                "aliases": [
+                                    "configs"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Auto-Mod config",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "automod",
+                                "name": "config",
+                                "short_doc": "",
+                                "signature": "[count=None]",
+                                "full_signature": "eru (automod | automods ) ( config | configs ) [count=None]",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "unignore": {
+                                "aliases": [
+                                    "protect"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Remove channels from auto-mod ignore list",
+                                "enabled": true,
+                                "extras": {},
+                                "help": "Specifies what channels to take off the ignore list.\nTo use this command you must have the Ban Members permission.",
+                                "hidden": false,
+                                "full_parent_name": "automod",
+                                "name": "unignore",
+                                "short_doc": "Specifies what channels to take off the ignore list.",
+                                "signature": "<Channels/id/mention>",
+                                "full_signature": "eru (automod | automods ) ( unignore | protect ) <Channels/id/mention>",
+                                "usage": "<Channels/id/mention>",
+                                "sub_commands": null
+                            },
+                            "maxstrikes": {
+                                "aliases": [
+                                    "strikecounts"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Set Maximum Strikes limit combining all filters",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "automod",
+                                "name": "maxstrikes",
+                                "short_doc": "",
+                                "signature": "<count of strikes>",
+                                "full_signature": "eru (automod | automods ) ( maxstrikes | strikecounts ) <count of strikes>",
+                                "usage": "<count of strikes>",
+                                "sub_commands": null
+                            },
+                            "ignore": {
+                                "aliases": [
+                                    "bypass"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Add channels to be ignored for auto-mod",
+                                "enabled": true,
+                                "extras": {},
+                                "help": "Specifies what channels ignore mentionspam auto-bans.\nIf a channel is given then that channel will no longer be protected\nby auto-banning from mention spammers.\nTo use this command you must have the Ban Members permission.",
+                                "hidden": false,
+                                "full_parent_name": "automod",
+                                "name": "ignore",
+                                "short_doc": "Specifies what channels ignore mentionspam auto-bans.",
+                                "signature": "<Channels/id/mention>",
+                                "full_signature": "eru (automod | automods ) ( ignore | bypass ) <Channels/id/mention>",
+                                "usage": "<Channels/id/mention>",
+                                "sub_commands": null
+                            }
+                        }
+                    },
+                    "emotespam": {
+                        "aliases": [
+                            "emotespamcount"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "manage_guild",
+                            "ban_members",
+                            "administrator"
+                        ],
+                        "description": "Set Emote spam count\nSet to 0 to turn off.",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "emotespam",
+                        "short_doc": "",
+                        "signature": "<count of emotes>",
+                        "full_signature": "eru ( emotespam | emotespamcount ) <count of emotes>",
+                        "usage": "<count of emotes>",
+                        "sub_commands": {
+                            "count": {
+                                "aliases": [
+                                    "maxcount"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Max strikes before Ban.\nset to 0 to turn off the filter.",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "emotespam",
+                                "name": "count",
+                                "short_doc": "",
+                                "signature": "<count of strikes>",
+                                "full_signature": "eru (emotespam | emotespamcount ) ( count | maxcount ) <count of strikes>",
+                                "usage": "<count of strikes>",
+                                "sub_commands": null
+                            }
+                        }
+                    },
+                    "enable": {
+                        "aliases": [
+                            "en"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "administrator"
+                        ],
+                        "description": "Enable commands/categories in current channel",
+                        "enabled": true,
+                        "extras": {
+                            "example": "eru enable helpful\ne! enable ping",
+                            "gif": null
+                        },
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "enable",
+                        "short_doc": "",
+                        "signature": "<Commands/Categories>",
+                        "full_signature": "eru ( enable | en ) <Commands/Categories>",
+                        "usage": "<Commands/Categories>",
+                        "sub_commands": null
+                    },
+                    "disable": {
+                        "aliases": [
+                            "ds"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "administrator"
+                        ],
+                        "description": "Disable commands/categories in current channel",
+                        "enabled": true,
+                        "extras": {
+                            "example": "eru disable helpful\ne! disable ping",
+                            "gif": null
+                        },
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "disable",
+                        "short_doc": "",
+                        "signature": "<Commands/Categories>",
+                        "full_signature": "eru ( disable | ds ) <Commands/Categories>",
+                        "usage": "<Commands/Categories>",
+                        "sub_commands": null
+                    },
+                    "bannedwords": {
+                        "aliases": [
+                            "bannedword"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "manage_guild",
+                            "ban_members",
+                            "administrator"
+                        ],
+                        "description": "List of words that needs to be restricted.",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "bannedwords",
+                        "short_doc": "",
+                        "signature": "",
+                        "full_signature": "eru ( bannedwords | bannedword ) ",
+                        "usage": null,
+                        "sub_commands": {
+                            "removeword": {
+                                "aliases": [
+                                    "rmwords"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Remove words from list of banned words.",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "bannedwords",
+                                "name": "removeword",
+                                "short_doc": "",
+                                "signature": "<words>",
+                                "full_signature": "eru (bannedwords | bannedword ) ( removeword | rmwords ) <words>",
+                                "usage": "<words>",
+                                "sub_commands": null
+                            },
+                            "count": {
+                                "aliases": [
+                                    "maxcount"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Max strikes before Ban.\nset to 0 to turn off the filter.",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "bannedwords",
+                                "name": "count",
+                                "short_doc": "",
+                                "signature": "<count of strikes>",
+                                "full_signature": "eru (bannedwords | bannedword ) ( count | maxcount ) <count of strikes>",
+                                "usage": "<count of strikes>",
+                                "sub_commands": null
+                            },
+                            "addword": {
+                                "aliases": [
+                                    "addwords"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Add words to list of banned words.",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "bannedwords",
+                                "name": "addword",
+                                "short_doc": "",
+                                "signature": "<words>",
+                                "full_signature": "eru (bannedwords | bannedword ) ( addword | addwords ) <words>",
+                                "usage": "<words>",
+                                "sub_commands": null
+                            }
+                        }
+                    },
+                    "mentionspam": {
+                        "aliases": [],
+                        "brief": null,
+                        "checks": [
+                            "manage_guild",
+                            "ban_members",
+                            "administrator"
+                        ],
+                        "description": "Auto ban for mention spam\nSet to 0 to turn off the filter.",
+                        "enabled": true,
+                        "extras": {},
+                        "help": "Enables auto-banning accounts that spam mentions.\nIf a message contains `count` or more mentions then the\nbot will automatically attempt to auto-ban the member.\nThe `count` must be greater than 3. If the `count` is 0\nthen this is disabled.\nThis only applies for user mentions. Everyone or Role\nmentions are not included.\nTo use this command you must have the Ban Members permission.",
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "mentionspam",
+                        "short_doc": "Enables auto-banning accounts that spam mentions.",
+                        "signature": "<count of mentions>",
+                        "full_signature": "eru mentionspam <count of mentions>",
+                        "usage": "<count of mentions>",
+                        "sub_commands": {
+                            "count": {
+                                "aliases": [
+                                    "maxcount"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Max strikes before Ban.\nset to 0 to turn off the filter.",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "mentionspam",
+                                "name": "count",
+                                "short_doc": "",
+                                "signature": "<count of strikes>",
+                                "full_signature": "eru (mentionspam ) ( count | maxcount ) <count of strikes>",
+                                "usage": "<count of strikes>",
+                                "sub_commands": null
+                            }
+                        }
+                    },
+                    "antiraid": {
+                        "aliases": [
+                            "antiraids"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "manage_guild",
+                            "ban_members",
+                            "administrator"
+                        ],
+                        "description": "Raid mode config",
+                        "enabled": true,
+                        "extras": {},
+                        "help": "Controls raid mode on the server.\nCalling this command with no arguments will show the current raid\nmode information.\nYou must have Manage Server permissions to use this command or\nits subcommands.",
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "antiraid",
+                        "short_doc": "Controls raid mode on the server.",
+                        "signature": "",
+                        "full_signature": "eru ( antiraid | antiraids ) ",
+                        "usage": null,
+                        "sub_commands": {
+                            "enable": {
+                                "aliases": [
+                                    "enabled",
+                                    "on"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Enables basic raid mode",
+                                "enabled": true,
+                                "extras": {},
+                                "help": "Enables basic raid mode on the server.\nWhen enabled, server verification level is set to high\nand allows the bot to broadcast new members joining\nto a specified channel.\nIf no channel is given, then the bot will broadcast join\nmessages on the channel this command was used in.",
+                                "hidden": false,
+                                "full_parent_name": "antiraid",
+                                "name": "enable",
+                                "short_doc": "Enables basic raid mode on the server.",
+                                "signature": "<Channel/id/mention>",
+                                "full_signature": "eru (antiraid | antiraids ) ( enable | enabled | on ) <Channel/id/mention>",
+                                "usage": "<Channel/id/mention>",
+                                "sub_commands": null
+                            },
+                            "strict": {
+                                "aliases": [
+                                    "str"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Enables strict raid mode (Auto Mod)",
+                                "enabled": true,
+                                "extras": {},
+                                "help": "Enables strict raid mode on the server.\nStrict mode is similar to regular enabled raid mode, with the added\nbenefit of auto-banning members that are spamming. The threshold for\nspamming depends on a per-content basis and also on a per-user basis\nof 15 messages per 17 seconds.\nIf this is considered too strict, it is recommended to fall back to regular\nraid mode.",
+                                "hidden": false,
+                                "full_parent_name": "antiraid",
+                                "name": "strict",
+                                "short_doc": "Enables strict raid mode on the server.",
+                                "signature": "<Channel/id/mention>",
+                                "full_signature": "eru (antiraid | antiraids ) ( strict | str ) <Channel/id/mention>",
+                                "usage": "<Channel/id/mention>",
+                                "sub_commands": null
+                            },
+                            "disable": {
+                                "aliases": [
+                                    "disabled",
+                                    "off"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Disables raid mode",
+                                "enabled": true,
+                                "extras": {},
+                                "help": "Disables raid mode on the server.\nWhen disabled, the server verification levels are set\nback to Low levels and the bot will stop broadcasting\njoin messages.",
+                                "hidden": false,
+                                "full_parent_name": "antiraid",
+                                "name": "disable",
+                                "short_doc": "Disables raid mode on the server.",
+                                "signature": "",
+                                "full_signature": "eru (antiraid | antiraids ) ( disable | disabled | off ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "count": {
+                                "aliases": [
+                                    "maxcount"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "ban_members",
+                                    "manage_guild"
+                                ],
+                                "description": "Max strikes before Ban.\nset to 0 to turn off the filter.",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "antiraid",
+                                "name": "count",
+                                "short_doc": "",
+                                "signature": "<count of strikes>",
+                                "full_signature": "eru (antiraid | antiraids ) ( count | maxcount ) <count of strikes>",
+                                "usage": "<count of strikes>",
+                                "sub_commands": null
+                            }
+                        }
                     },
                     "sticky": {
                         "aliases": [
@@ -2159,6 +2632,255 @@ class Commands extends Component{
                             }
                         }
                     },
+                    "commands": {
+                        "aliases": [
+                            "cmmds"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "administrator"
+                        ],
+                        "description": "Check disabled commands/categories in currenct channel",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "commands",
+                        "short_doc": "",
+                        "signature": "",
+                        "full_signature": "eru ( commands | cmmds ) ",
+                        "usage": null,
+                        "sub_commands": {
+                            "guildreset": {
+                                "aliases": [
+                                    "rsg"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator"
+                                ],
+                                "description": "Resets Guild commands",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "commands",
+                                "name": "guildreset",
+                                "short_doc": "",
+                                "signature": "",
+                                "full_signature": "eru (commands | cmmds ) ( guildreset | rsg ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "reset": {
+                                "aliases": [
+                                    "resetchannel"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator"
+                                ],
+                                "description": "Resets channel commands",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "commands",
+                                "name": "reset",
+                                "short_doc": "",
+                                "signature": "<channel/id/mention>",
+                                "full_signature": "eru (commands | cmmds ) ( reset | resetchannel ) <channel/id/mention>",
+                                "usage": "<channel/id/mention>",
+                                "sub_commands": null
+                            },
+                            "stats": {
+                                "aliases": [
+                                    "status"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator"
+                                ],
+                                "description": "Resets channel commands",
+                                "enabled": true,
+                                "extras": {},
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "commands",
+                                "name": "stats",
+                                "short_doc": "",
+                                "signature": "<channel/id/mention>",
+                                "full_signature": "eru (commands | cmmds ) ( stats | status ) <channel/id/mention>",
+                                "usage": "<channel/id/mention>",
+                                "sub_commands": null
+                            }
+                        }
+                    },
+                    "unlock": {
+                        "aliases": [
+                            "unlockdown"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "manage_guild",
+                            "administrator"
+                        ],
+                        "description": "Unock channel",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "unlock",
+                        "short_doc": "",
+                        "signature": "<channel/id/name/mention>",
+                        "full_signature": "eru ( unlock | unlockdown ) <channel/id/name/mention>",
+                        "usage": "<channel/id/name/mention>",
+                        "sub_commands": null
+                    },
+                    "removerole": {
+                        "aliases": [
+                            "removeroles"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "administrator",
+                            "manage_permissions",
+                            "manage_roles",
+                            "manage_guild"
+                        ],
+                        "description": "Remove role/s to user/s",
+                        "enabled": true,
+                        "extras": {},
+                        "help": "Remove role/s to member/s",
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "removerole",
+                        "short_doc": "Remove role/s to member/s",
+                        "signature": "<user/id/name/mention/s> <role/id/name/mention/s> [reason]",
+                        "full_signature": "eru ( removerole | removeroles ) <user/id/name/mention/s> <role/id/name/mention/s> [reason]",
+                        "usage": "<user/id/name/mention/s> <role/id/name/mention/s> [reason]",
+                        "sub_commands": null
+                    },
+                    "addemote": {
+                        "aliases": [
+                            "addemoji"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "manage_emojis",
+                            "manage_emojis_and_stickers",
+                            "manage_guild",
+                            "administrator"
+                        ],
+                        "description": "Add emoji/s",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "addemote",
+                        "short_doc": "",
+                        "signature": "<name> <image>",
+                        "full_signature": "eru ( addemote | addemoji ) <name> <image>",
+                        "usage": "<name> <image>",
+                        "sub_commands": null
+                    },
+                    "newusers": {
+                        "aliases": [
+                            "newmembers"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "administrator",
+                            "manage_guild"
+                        ],
+                        "description": "Get info of recently joined users",
+                        "enabled": true,
+                        "extras": {},
+                        "help": "Tells you the newest members of the server.\nThis is useful to check if any suspicious members have\njoined.\nThe count parameter can only be up to 25.",
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "newusers",
+                        "short_doc": "Tells you the newest members of the server.",
+                        "signature": "<count>",
+                        "full_signature": "eru ( newusers | newmembers ) <count>",
+                        "usage": "<count>",
+                        "sub_commands": null
+                    },
+                    "lock": {
+                        "aliases": [
+                            "lockdown"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "manage_guild",
+                            "administrator"
+                        ],
+                        "description": "Lock channel",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "lock",
+                        "short_doc": "",
+                        "signature": "<channel/id/name/mention>",
+                        "full_signature": "eru ( lock | lockdown ) <channel/id/name/mention>",
+                        "usage": "<channel/id/name/mention>",
+                        "sub_commands": null
+                    },
+                    "removeemote": {
+                        "aliases": [
+                            "rmemoji",
+                            "rmemote"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "manage_emojis",
+                            "manage_emojis_and_stickers",
+                            "manage_guild",
+                            "administrator"
+                        ],
+                        "description": "Remove emote/s",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "removeemote",
+                        "short_doc": "",
+                        "signature": "<emote/s>",
+                        "full_signature": "eru ( removeemote | rmemoji | rmemote ) <emote/s>",
+                        "usage": "<emote/s>",
+                        "sub_commands": null
+                    },
+                    "prefix": {
+                        "aliases": [
+                            "pre"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "manage_guild",
+                            "administrator"
+                        ],
+                        "description": "Want to change or check my prefix?",
+                        "enabled": true,
+                        "extras": {
+                            "example": "eru prefix\neru prefix e!",
+                            "gif": null
+                        },
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "prefix",
+                        "short_doc": "",
+                        "signature": "<prefix>",
+                        "full_signature": "eru ( prefix | pre ) <prefix>",
+                        "usage": "<prefix>",
+                        "sub_commands": null
+                    },
                     "showcase": {
                         "aliases": [
                             "show"
@@ -2182,6 +2904,192 @@ class Commands extends Component{
                         "full_signature": "eru ( showcase | show ) <reply message + channel/id>",
                         "usage": "<reply message + channel/id>",
                         "sub_commands": null
+                    },
+                    "purge": {
+                        "aliases": [
+                            "clean"
+                        ],
+                        "brief": null,
+                        "checks": [
+                            "manage_guild",
+                            "manage_messages",
+                            "administrator"
+                        ],
+                        "description": "Delete Messages in the channel",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "purge",
+                        "short_doc": "",
+                        "signature": "",
+                        "full_signature": "eru ( purge | clean ) ",
+                        "usage": null,
+                        "sub_commands": {
+                            "contains": {
+                                "aliases": [
+                                    "ct"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "manage_messages",
+                                    "manage_guild"
+                                ],
+                                "description": "",
+                                "enabled": true,
+                                "extras": {},
+                                "help": "Removes all messages containing a substring.\nThe substring must be at least 3 characters long.",
+                                "hidden": false,
+                                "full_parent_name": "purge",
+                                "name": "contains",
+                                "short_doc": "Removes all messages containing a substring.",
+                                "signature": "<substr>",
+                                "full_signature": "eru (purge | clean ) ( contains | ct ) <substr>",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "user": {
+                                "aliases": [
+                                    "us"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "manage_messages",
+                                    "manage_guild"
+                                ],
+                                "description": "",
+                                "enabled": true,
+                                "extras": {},
+                                "help": "Removes all messages by the member.",
+                                "hidden": false,
+                                "full_parent_name": "purge",
+                                "name": "user",
+                                "short_doc": "Removes all messages by the member.",
+                                "signature": "<member> [search=100]",
+                                "full_signature": "eru (purge | clean ) ( user | us ) <member> [search=100]",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "bots": {
+                                "aliases": [
+                                    "bot"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "manage_messages",
+                                    "manage_guild"
+                                ],
+                                "description": "",
+                                "enabled": true,
+                                "extras": {},
+                                "help": "Removes a bot user's messages and messages with their optional prefix.",
+                                "hidden": false,
+                                "full_parent_name": "purge",
+                                "name": "bots",
+                                "short_doc": "Removes a bot user's messages and messages with their optional prefix.",
+                                "signature": "[prefix=None] [search=100]",
+                                "full_signature": "eru (purge | clean ) ( bots | bot ) [prefix=None] [search=100]",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "embed": {
+                                "aliases": [
+                                    "em"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "manage_messages",
+                                    "manage_guild"
+                                ],
+                                "description": "",
+                                "enabled": true,
+                                "extras": {},
+                                "help": "Removes messages that have embeds in them.",
+                                "hidden": false,
+                                "full_parent_name": "purge",
+                                "name": "embed",
+                                "short_doc": "Removes messages that have embeds in them.",
+                                "signature": "[search=100]",
+                                "full_signature": "eru (purge | clean ) ( embed | em ) [search=100]",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "all": {
+                                "aliases": [
+                                    "a"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "manage_messages",
+                                    "manage_guild"
+                                ],
+                                "description": "",
+                                "enabled": true,
+                                "extras": {},
+                                "help": "Removes all messages.",
+                                "hidden": false,
+                                "full_parent_name": "purge",
+                                "name": "all",
+                                "short_doc": "Removes all messages.",
+                                "signature": "[search=100]",
+                                "full_signature": "eru (purge | clean ) ( all | a ) [search=100]",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "attachments": {
+                                "aliases": [
+                                    "attc",
+                                    "files"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "manage_messages",
+                                    "manage_guild"
+                                ],
+                                "description": "",
+                                "enabled": true,
+                                "extras": {},
+                                "help": "Removes messages that have embeds or attachments.",
+                                "hidden": false,
+                                "full_parent_name": "purge",
+                                "name": "attachments",
+                                "short_doc": "Removes messages that have embeds or attachments.",
+                                "signature": "[search=100]",
+                                "full_signature": "eru (purge | clean ) ( attachments | attc | files ) [search=100]",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "reactions": {
+                                "aliases": [
+                                    "rc"
+                                ],
+                                "brief": null,
+                                "checks": [
+                                    "administrator",
+                                    "manage_messages",
+                                    "manage_guild"
+                                ],
+                                "description": "",
+                                "enabled": true,
+                                "extras": {},
+                                "help": "Removes all reactions from messages that have them.",
+                                "hidden": false,
+                                "full_parent_name": "purge",
+                                "name": "reactions",
+                                "short_doc": "Removes all reactions from messages that have them.",
+                                "signature": "[search=100]",
+                                "full_signature": "eru (purge | clean ) ( reactions | rc ) [search=100]",
+                                "usage": null,
+                                "sub_commands": null
+                            }
+                        }
                     },
                     "custompurge": {
                         "aliases": [
@@ -2208,51 +3116,164 @@ class Commands extends Component{
                         "full_signature": "eru ( custompurge | cpurge ) <arguments>",
                         "usage": null,
                         "sub_commands": null
-                    },
-                    "enable": {
-                        "aliases": [
-                            "en"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "Enable commands/categories in current channel",
-                        "enabled": true,
-                        "extras": {
-                            "example": "eru enable helpful\ne! enable ping",
-                            "gif": null
-                        },
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "enable",
-                        "short_doc": "",
-                        "signature": "<Commands/Categories>",
-                        "full_signature": "eru ( enable | en ) <Commands/Categories>",
-                        "usage": "<Commands/Categories>",
-                        "sub_commands": null
                     }
                 },
                 "server": {
-                    "poll": {
+                    "userinfo": {
                         "aliases": [
-                            "createpoll"
+                            "ui",
+                            "info",
+                            "whois"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "Create polls to get members opinion quickly",
+                        "description": "check user's info",
                         "enabled": true,
                         "extras": {
-                            "example": "e!createpoll apple,orange,mango\neru poll akeno,rias",
+                            "example": "eru ui @eru#5028\ne! userinfo 841372493746798612",
                             "gif": null
                         },
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "poll",
+                        "name": "userinfo",
                         "short_doc": "",
-                        "signature": "<','serperated options>",
-                        "full_signature": "eru ( poll | createpoll ) <','serperated options>",
-                        "usage": "<','serperated options>",
+                        "signature": "<user id/name/mention>",
+                        "full_signature": "eru ( userinfo | ui | info | whois ) <user id/name/mention>",
+                        "usage": "<user id/name/mention>",
+                        "sub_commands": null
+                    },
+                    "serverinfo": {
+                        "aliases": [
+                            "si"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "Check servers's info",
+                        "enabled": true,
+                        "extras": {
+                            "example": "eru si\ne!serverinfo",
+                            "gif": null
+                        },
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "serverinfo",
+                        "short_doc": "",
+                        "signature": "",
+                        "full_signature": "eru ( serverinfo | si ) ",
+                        "usage": null,
+                        "sub_commands": null
+                    },
+                    "spotify": {
+                        "aliases": [
+                            "sp"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "Show what you are listening on spotfiy",
+                        "enabled": true,
+                        "extras": {
+                            "example": "eru sp @eru#5028\ne!spotify 841372493746798612",
+                            "gif": null
+                        },
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "spotify",
+                        "short_doc": "",
+                        "signature": "<user/id/name/mention>",
+                        "full_signature": "eru ( spotify | sp ) <user/id/name/mention>",
+                        "usage": "<user/id/name/mention>",
+                        "sub_commands": null
+                    },
+                    "lastfm": {
+                        "aliases": [
+                            "lfm",
+                            "fm"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "Manage your last.fm account",
+                        "enabled": true,
+                        "extras": {},
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "lastfm",
+                        "short_doc": "",
+                        "signature": "<sub commands>",
+                        "full_signature": "eru ( lastfm | lfm | fm ) <sub commands>",
+                        "usage": "<sub commands>",
+                        "sub_commands": {
+                            "remove": {
+                                "aliases": [
+                                    "rm",
+                                    "reset"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Remove your username.",
+                                "enabled": true,
+                                "extras": {
+                                    "example": "eru lfm rm\ne!lastfm remove",
+                                    "gif": null
+                                },
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "lastfm",
+                                "name": "remove",
+                                "short_doc": "",
+                                "signature": "",
+                                "full_signature": "eru (lastfm | lfm  | fm ) ( remove | rm | reset ) ",
+                                "usage": null,
+                                "sub_commands": null
+                            },
+                            "username": {
+                                "aliases": [
+                                    "addusername",
+                                    "un"
+                                ],
+                                "brief": null,
+                                "checks": [],
+                                "description": "Set/Check your username.",
+                                "enabled": true,
+                                "extras": {
+                                    "example": "eru lfm username\ne!lastfm un username",
+                                    "gif": null
+                                },
+                                "help": null,
+                                "hidden": false,
+                                "full_parent_name": "lastfm",
+                                "name": "username",
+                                "short_doc": "",
+                                "signature": "<username>",
+                                "full_signature": "eru (lastfm | lfm  | fm ) ( username | addusername | un ) <username>",
+                                "usage": "<username>",
+                                "sub_commands": null
+                            }
+                        }
+                    },
+                    "lyrics": {
+                        "aliases": [
+                            "ly"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "Search lyrics of now playing song",
+                        "enabled": true,
+                        "extras": {
+                            "example": "eru ly @eru#5028\ne!lyrics 841372493746798612",
+                            "gif": null
+                        },
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "lyrics",
+                        "short_doc": "",
+                        "signature": "<user/id/mention>",
+                        "full_signature": "eru ( lyrics | ly ) <user/id/mention>",
+                        "usage": "<user/id/mention>",
                         "sub_commands": null
                     },
                     "banner": {
@@ -2275,6 +3296,51 @@ class Commands extends Component{
                         "signature": "<user/id/name/mention>",
                         "full_signature": "eru ( banner | bannerimage ) <user/id/name/mention>",
                         "usage": "<user/id/name/mention>",
+                        "sub_commands": null
+                    },
+                    "stickers": {
+                        "aliases": [
+                            "getstickers",
+                            "stkr"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "View stickers sent inchat",
+                        "enabled": true,
+                        "extras": {
+                            "example": "eru stickers\ne! emojis <:a3:897704645345017887>",
+                            "gif": null
+                        },
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "stickers",
+                        "short_doc": "",
+                        "signature": "<emojis/reply>",
+                        "full_signature": "eru ( stickers | getstickers | stkr ) <emojis/reply>",
+                        "usage": "<emojis/reply>",
+                        "sub_commands": null
+                    },
+                    "inviteinfo": {
+                        "aliases": [
+                            "ii"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "Check invite link's info",
+                        "enabled": true,
+                        "extras": {
+                            "example": "e!inviteinfo discord.gg/genshinimpact\neru ii azurlane",
+                            "gif": null
+                        },
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "inviteinfo",
+                        "short_doc": "",
+                        "signature": "<invite id/link>",
+                        "full_signature": "eru ( inviteinfo | ii ) <invite id/link>",
+                        "usage": "<invite id/link>",
                         "sub_commands": null
                     },
                     "emojis": {
@@ -2322,210 +3388,52 @@ class Commands extends Component{
                         "usage": "<user/id/name/mention>",
                         "sub_commands": null
                     },
-                    "stickers": {
+                    "poll": {
                         "aliases": [
-                            "getstickers",
-                            "stkr"
+                            "createpoll"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "View stickers sent inchat",
+                        "description": "Create polls to get members opinion quickly",
                         "enabled": true,
                         "extras": {
-                            "example": "eru stickers\ne! emojis <:a3:897704645345017887>",
+                            "example": "e!createpoll apple,orange,mango\neru poll akeno,rias",
                             "gif": null
                         },
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "stickers",
+                        "name": "poll",
                         "short_doc": "",
-                        "signature": "<emojis/reply>",
-                        "full_signature": "eru ( stickers | getstickers | stkr ) <emojis/reply>",
-                        "usage": "<emojis/reply>",
-                        "sub_commands": null
-                    },
-                    "spotify": {
-                        "aliases": [
-                            "sp"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "Show what you are listening on spotfiy",
-                        "enabled": true,
-                        "extras": {
-                            "example": "eru sp @eru#5028\ne!spotify 841372493746798612",
-                            "gif": null
-                        },
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "spotify",
-                        "short_doc": "",
-                        "signature": "<user/id/name/mention>",
-                        "full_signature": "eru ( spotify | sp ) <user/id/name/mention>",
-                        "usage": "<user/id/name/mention>",
-                        "sub_commands": null
-                    },
-                    "serverinfo": {
-                        "aliases": [
-                            "si"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "Check servers's info",
-                        "enabled": true,
-                        "extras": {
-                            "example": "eru si\ne!serverinfo",
-                            "gif": null
-                        },
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "serverinfo",
-                        "short_doc": "",
-                        "signature": "",
-                        "full_signature": "eru ( serverinfo | si ) ",
-                        "usage": null,
-                        "sub_commands": null
-                    },
-                    "inviteinfo": {
-                        "aliases": [
-                            "ii"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "Check invite link's info",
-                        "enabled": true,
-                        "extras": {
-                            "example": "e!inviteinfo discord.gg/genshinimpact\neru ii azurlane",
-                            "gif": null
-                        },
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "inviteinfo",
-                        "short_doc": "",
-                        "signature": "<invite id/link>",
-                        "full_signature": "eru ( inviteinfo | ii ) <invite id/link>",
-                        "usage": "<invite id/link>",
-                        "sub_commands": null
-                    },
-                    "userinfo": {
-                        "aliases": [
-                            "ui",
-                            "info",
-                            "whois"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "check user's info",
-                        "enabled": true,
-                        "extras": {
-                            "example": "eru ui @eru#5028\ne! userinfo 841372493746798612",
-                            "gif": null
-                        },
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "userinfo",
-                        "short_doc": "",
-                        "signature": "<user id/name/mention>",
-                        "full_signature": "eru ( userinfo | ui | info | whois ) <user id/name/mention>",
-                        "usage": "<user id/name/mention>",
-                        "sub_commands": null
-                    },
-                    "lastfm": {
-                        "aliases": [
-                            "lfm",
-                            "fm"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "Manage your last.fm account",
-                        "enabled": true,
-                        "extras": {},
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "lastfm",
-                        "short_doc": "",
-                        "signature": "<sub commands>",
-                        "full_signature": "eru ( lastfm | lfm | fm ) <sub commands>",
-                        "usage": "<sub commands>",
-                        "sub_commands": {
-                            "username": {
-                                "aliases": [
-                                    "addusername",
-                                    "un"
-                                ],
-                                "brief": null,
-                                "checks": [],
-                                "description": "Set/Check your username.",
-                                "enabled": true,
-                                "extras": {
-                                    "example": "eru lfm username\ne!lastfm un username",
-                                    "gif": null
-                                },
-                                "help": null,
-                                "hidden": false,
-                                "full_parent_name": "lastfm",
-                                "name": "username",
-                                "short_doc": "",
-                                "signature": "<username>",
-                                "full_signature": "eru (lastfm | lfm  | fm ) ( username | addusername | un ) <username>",
-                                "usage": "<username>",
-                                "sub_commands": null
-                            },
-                            "remove": {
-                                "aliases": [
-                                    "rm",
-                                    "reset"
-                                ],
-                                "brief": null,
-                                "checks": [],
-                                "description": "Remove your username.",
-                                "enabled": true,
-                                "extras": {
-                                    "example": "eru lfm rm\ne!lastfm remove",
-                                    "gif": null
-                                },
-                                "help": null,
-                                "hidden": false,
-                                "full_parent_name": "lastfm",
-                                "name": "remove",
-                                "short_doc": "",
-                                "signature": "",
-                                "full_signature": "eru (lastfm | lfm  | fm ) ( remove | rm | reset ) ",
-                                "usage": null,
-                                "sub_commands": null
-                            }
-                        }
-                    },
-                    "lyrics": {
-                        "aliases": [
-                            "ly"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "Search lyrics of now playing song",
-                        "enabled": true,
-                        "extras": {
-                            "example": "eru ly @eru#5028\ne!lyrics 841372493746798612",
-                            "gif": null
-                        },
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "lyrics",
-                        "short_doc": "",
-                        "signature": "<user/id/mention>",
-                        "full_signature": "eru ( lyrics | ly ) <user/id/mention>",
-                        "usage": "<user/id/mention>",
+                        "signature": "<','serperated options>",
+                        "full_signature": "eru ( poll | createpoll ) <','serperated options>",
+                        "usage": "<','serperated options>",
                         "sub_commands": null
                     }
                 },
                 "utilities": {
+                    "quote": {
+                        "aliases": [
+                            "excerpt"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "get a random quote",
+                        "enabled": true,
+                        "extras": {
+                            "example": "eru quote\ne!excerpt",
+                            "gif": null
+                        },
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "quote",
+                        "short_doc": "",
+                        "signature": "",
+                        "full_signature": "eru ( quote | excerpt ) ",
+                        "usage": null,
+                        "sub_commands": null
+                    },
                     "fact": {
                         "aliases": [
                             "afact"
@@ -2548,92 +3456,47 @@ class Commands extends Component{
                         "usage": null,
                         "sub_commands": null
                     },
-                    "color": {
+                    "anime": {
                         "aliases": [
-                            "colour"
+                            "animesearch"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "check colors with thier rgb/hex values",
+                        "description": "search for animes",
                         "enabled": true,
                         "extras": {
-                            "example": "eru color 244,233,233\ne!colour #111111",
+                            "example": "eru anime hyouka\ne! anime one piece",
                             "gif": null
                         },
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "color",
-                        "short_doc": "",
-                        "signature": "<color value>",
-                        "full_signature": "eru ( color | colour ) <color value>",
-                        "usage": "<color value>",
-                        "sub_commands": null
-                    },
-                    "urban": {
-                        "aliases": [
-                            "ud"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "search for urbandictionary",
-                        "enabled": true,
-                        "extras": {
-                            "example": "eru ud wassup\ne! ud elon musk",
-                            "gif": null
-                        },
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "urban",
+                        "name": "anime",
                         "short_doc": "",
                         "signature": "<anything>",
-                        "full_signature": "eru ( urban | ud ) <anything>",
+                        "full_signature": "eru ( anime | animesearch ) <anything>",
                         "usage": "<anything>",
                         "sub_commands": null
                     },
-                    "inshorts": {
+                    "wikipedia": {
                         "aliases": [
-                            "is",
-                            "news"
+                            "wiki"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "<:beta:941321545459056671> Check News ",
+                        "description": "search wikipedia",
                         "enabled": true,
                         "extras": {
-                            "example": "eru inshorts\ne!is technology",
+                            "example": "eru wiki hello world\ne! wikipedia hyouka",
                             "gif": null
                         },
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "inshorts",
-                        "short_doc": "",
-                        "signature": "<category>",
-                        "full_signature": "eru ( inshorts | is | news ) <category>",
-                        "usage": "<category>",
-                        "sub_commands": null
-                    },
-                    "track": {
-                        "aliases": [
-                            "trc"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "search tracks on spotify",
-                        "enabled": true,
-                        "extras": {
-                            "example": "eru trc hyouka\ne! trc nandemoniya",
-                            "gif": null
-                        },
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "track",
+                        "name": "wikipedia",
                         "short_doc": "",
                         "signature": "<anything>",
-                        "full_signature": "eru ( track | trc ) <anything>",
+                        "full_signature": "eru ( wikipedia | wiki ) <anything>",
                         "usage": "<anything>",
                         "sub_commands": null
                     },
@@ -2656,6 +3519,28 @@ class Commands extends Component{
                         "short_doc": "",
                         "signature": "<anything>",
                         "full_signature": "eru ( youtube | yt ) <anything>",
+                        "usage": "<anything>",
+                        "sub_commands": null
+                    },
+                    "urban": {
+                        "aliases": [
+                            "ud"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "search for urbandictionary",
+                        "enabled": true,
+                        "extras": {
+                            "example": "eru ud wassup\ne! ud elon musk",
+                            "gif": null
+                        },
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "urban",
+                        "short_doc": "",
+                        "signature": "<anything>",
+                        "full_signature": "eru ( urban | ud ) <anything>",
                         "usage": "<anything>",
                         "sub_commands": null
                     },
@@ -2682,92 +3567,71 @@ class Commands extends Component{
                         "usage": "<anything>",
                         "sub_commands": null
                     },
-                    "privacysetting": {
+                    "track": {
                         "aliases": [
-                            "pvcset"
+                            "trc"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "Set your privacy settings. Your messages wont be tracked if set ON",
+                        "description": "search tracks on spotify",
                         "enabled": true,
                         "extras": {
-                            "example": "eru privacysetting off\ne! pvcset on",
+                            "example": "eru trc hyouka\ne! trc nandemoniya",
                             "gif": null
                         },
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "privacysetting",
-                        "short_doc": "",
-                        "signature": "<status>",
-                        "full_signature": "eru ( privacysetting | pvcset ) <status>",
-                        "usage": null,
-                        "sub_commands": null
-                    },
-                    "anime": {
-                        "aliases": [
-                            "animesearch"
-                        ],
-                        "brief": null,
-                        "checks": [],
-                        "description": "search for animes",
-                        "enabled": true,
-                        "extras": {
-                            "example": "eru anime hyouka\ne! anime one piece",
-                            "gif": null
-                        },
-                        "help": null,
-                        "hidden": false,
-                        "full_parent_name": "",
-                        "name": "anime",
+                        "name": "track",
                         "short_doc": "",
                         "signature": "<anything>",
-                        "full_signature": "eru ( anime | animesearch ) <anything>",
+                        "full_signature": "eru ( track | trc ) <anything>",
                         "usage": "<anything>",
                         "sub_commands": null
                     },
-                    "policy": {
+                    "color": {
                         "aliases": [
-                            "privacy"
+                            "colour"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "our privacy policy",
+                        "description": "check colors with thier rgb/hex values",
                         "enabled": true,
                         "extras": {
-                            "example": "eru privacy\ne! policy",
+                            "example": "eru color 244,233,233\ne!colour #111111",
                             "gif": null
                         },
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "policy",
+                        "name": "color",
                         "short_doc": "",
-                        "signature": "",
-                        "full_signature": "eru ( policy | privacy ) ",
-                        "usage": null,
+                        "signature": "<color value>",
+                        "full_signature": "eru ( color | colour ) <color value>",
+                        "usage": "<color value>",
                         "sub_commands": null
                     },
-                    "wikipedia": {
+                    "inshorts": {
                         "aliases": [
-                            "wiki"
+                            "is",
+                            "news"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "search wikipedia",
+                        "description": "<:beta:941321545459056671> Check News ",
                         "enabled": true,
                         "extras": {
-                            "example": "eru wiki hello world\ne! wikipedia hyouka",
+                            "example": "eru inshorts\ne!is technology",
                             "gif": null
                         },
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "wikipedia",
+                        "name": "inshorts",
                         "short_doc": "",
-                        "signature": "<anything>",
-                        "full_signature": "eru ( wikipedia | wiki ) <anything>",
-                        "usage": "<anything>",
+                        "signature": "<category>",
+                        "full_signature": "eru ( inshorts | is | news ) <category>",
+                        "usage": "<category>",
                         "sub_commands": null
                     },
                     "yttogether": {
@@ -2792,26 +3656,26 @@ class Commands extends Component{
                         "usage": null,
                         "sub_commands": null
                     },
-                    "math": {
+                    "policy": {
                         "aliases": [
-                            "maths"
+                            "privacy"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "Do some maths with eru",
+                        "description": "our privacy policy",
                         "enabled": true,
                         "extras": {
-                            "example": "\n            eru math 1+2\n            eru math sqrt(1+2)\n            ___functions available___\n            + , - , * , / , ^ , sqrt , sin , cos , tan , asin , acos , atan , deg , rad            \n            ",
+                            "example": "eru privacy\ne! policy",
                             "gif": null
                         },
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "math",
+                        "name": "policy",
                         "short_doc": "",
-                        "signature": "<expression>",
-                        "full_signature": "eru ( math | maths ) <expression>",
-                        "usage": "<expression>",
+                        "signature": "",
+                        "full_signature": "eru ( policy | privacy ) ",
+                        "usage": null,
                         "sub_commands": null
                     },
                     "translate": {
@@ -2859,40 +3723,53 @@ class Commands extends Component{
                             }
                         }
                     },
-                    "quote": {
+                    "privacysetting": {
                         "aliases": [
-                            "excerpt"
+                            "pvcset"
                         ],
                         "brief": null,
                         "checks": [],
-                        "description": "get a random quote",
+                        "description": "Set your privacy settings. Your messages wont be tracked if set ON",
                         "enabled": true,
                         "extras": {
-                            "example": "eru quote\ne!excerpt",
+                            "example": "eru privacysetting off\ne! pvcset on",
                             "gif": null
                         },
                         "help": null,
                         "hidden": false,
                         "full_parent_name": "",
-                        "name": "quote",
+                        "name": "privacysetting",
                         "short_doc": "",
-                        "signature": "",
-                        "full_signature": "eru ( quote | excerpt ) ",
+                        "signature": "<status>",
+                        "full_signature": "eru ( privacysetting | pvcset ) <status>",
                         "usage": null,
+                        "sub_commands": null
+                    },
+                    "math": {
+                        "aliases": [
+                            "maths"
+                        ],
+                        "brief": null,
+                        "checks": [],
+                        "description": "Do some maths with eru",
+                        "enabled": true,
+                        "extras": {
+                            "example": "\n            eru math 1+2\n            eru math sqrt(1+2)\n            ___functions available___\n            + , - , * , / , ^ , sqrt , sin , cos , tan , asin , acos , atan , deg , rad            \n            ",
+                            "gif": null
+                        },
+                        "help": null,
+                        "hidden": false,
+                        "full_parent_name": "",
+                        "name": "math",
+                        "short_doc": "",
+                        "signature": "<expression>",
+                        "full_signature": "eru ( math | maths ) <expression>",
+                        "usage": "<expression>",
                         "sub_commands": null
                     }
                 }
-            
             },
             commands:{
-                "jishaku": [
-                    "Jishaku",
-                    "jishaku"
-                ],
-                "jsk": [
-                    "Jishaku",
-                    "jishaku"
-                ],
                 "truth": [
                     "fun",
                     "truth"
@@ -2909,30 +3786,6 @@ class Commands extends Component{
                     "fun",
                     "pickup"
                 ],
-                "phcmnt": [
-                    "fun",
-                    "phcmnt"
-                ],
-                "pornhubcomment": [
-                    "fun",
-                    "phcmnt"
-                ],
-                "joke": [
-                    "fun",
-                    "joke"
-                ],
-                "makejoke": [
-                    "fun",
-                    "joke"
-                ],
-                "tweet": [
-                    "fun",
-                    "tweet"
-                ],
-                "twiter": [
-                    "fun",
-                    "tweet"
-                ],
                 "8ball": [
                     "fun",
                     "8ball"
@@ -2940,22 +3793,6 @@ class Commands extends Component{
                 "8balls": [
                     "fun",
                     "8ball"
-                ],
-                "fakedc": [
-                    "fun",
-                    "fakedc"
-                ],
-                "dcmsg": [
-                    "fun",
-                    "fakedc"
-                ],
-                "changemymind": [
-                    "fun",
-                    "changemymind"
-                ],
-                "cmm": [
-                    "fun",
-                    "changemymind"
                 ],
                 "pp": [
                     "fun",
@@ -2965,21 +3802,21 @@ class Commands extends Component{
                     "fun",
                     "pp"
                 ],
-                "ytcmnt": [
+                "joke": [
                     "fun",
-                    "ytcmnt"
+                    "joke"
                 ],
-                "youtubecomment": [
+                "makejoke": [
                     "fun",
-                    "ytcmnt"
+                    "joke"
                 ],
-                "tpde": [
+                "phcmnt": [
                     "fun",
-                    "tpde"
+                    "phcmnt"
                 ],
-                "thispersondoesnotexist": [
+                "pornhubcomment": [
                     "fun",
-                    "tpde"
+                    "phcmnt"
                 ],
                 "gay": [
                     "fun",
@@ -2993,13 +3830,53 @@ class Commands extends Component{
                     "fun",
                     "gay"
                 ],
-                "wasted": [
+                "changemymind": [
                     "fun",
-                    "wasted"
+                    "changemymind"
                 ],
-                "wastedgta": [
+                "cmm": [
                     "fun",
-                    "wasted"
+                    "changemymind"
+                ],
+                "tweet": [
+                    "fun",
+                    "tweet"
+                ],
+                "twiter": [
+                    "fun",
+                    "tweet"
+                ],
+                "ytcmnt": [
+                    "fun",
+                    "ytcmnt"
+                ],
+                "youtubecomment": [
+                    "fun",
+                    "ytcmnt"
+                ],
+                "fakedc": [
+                    "fun",
+                    "fakedc"
+                ],
+                "dcmsg": [
+                    "fun",
+                    "fakedc"
+                ],
+                "threats": [
+                    "fun",
+                    "threats"
+                ],
+                "dangers": [
+                    "fun",
+                    "threats"
+                ],
+                "tpde": [
+                    "fun",
+                    "tpde"
+                ],
+                "thispersondoesnotexist": [
+                    "fun",
+                    "tpde"
                 ],
                 "ship": [
                     "fun",
@@ -3013,14 +3890,6 @@ class Commands extends Component{
                     "fun",
                     "ship"
                 ],
-                "jail": [
-                    "fun",
-                    "jail"
-                ],
-                "prison": [
-                    "fun",
-                    "jail"
-                ],
                 "waifu": [
                     "fun",
                     "waifu"
@@ -3029,6 +3898,22 @@ class Commands extends Component{
                     "fun",
                     "waifu"
                 ],
+                "swirl": [
+                    "fun",
+                    "swirl"
+                ],
+                "swirlimage": [
+                    "fun",
+                    "swirl"
+                ],
+                "trash": [
+                    "fun",
+                    "trash"
+                ],
+                "trashmeme": [
+                    "fun",
+                    "trash"
+                ],
                 "whygay": [
                     "fun",
                     "whygay"
@@ -3036,14 +3921,6 @@ class Commands extends Component{
                 "whygae": [
                     "fun",
                     "whygay"
-                ],
-                "threats": [
-                    "fun",
-                    "threats"
-                ],
-                "dangers": [
-                    "fun",
-                    "threats"
                 ],
                 "5g1g": [
                     "fun",
@@ -3061,13 +3938,13 @@ class Commands extends Component{
                     "fun",
                     "wanted"
                 ],
-                "trash": [
+                "wasted": [
                     "fun",
-                    "trash"
+                    "wasted"
                 ],
-                "trashmeme": [
+                "wastedgta": [
                     "fun",
-                    "trash"
+                    "wasted"
                 ],
                 "trigger": [
                     "fun",
@@ -3076,14 +3953,6 @@ class Commands extends Component{
                 "triggered": [
                     "fun",
                     "trigger"
-                ],
-                "swirl": [
-                    "fun",
-                    "swirl"
-                ],
-                "swirlimage": [
-                    "fun",
-                    "swirl"
                 ],
                 "sketch": [
                     "fun",
@@ -3165,6 +4034,14 @@ class Commands extends Component{
                     "fun",
                     "delthis"
                 ],
+                "jail": [
+                    "fun",
+                    "jail"
+                ],
+                "prison": [
+                    "fun",
+                    "jail"
+                ],
                 "invert": [
                     "fun",
                     "invert"
@@ -3181,13 +4058,13 @@ class Commands extends Component{
                     "fun",
                     "deepfry"
                 ],
-                "awo": [
+                "communism": [
                     "fun",
-                    "awo"
+                    "communism"
                 ],
-                "eruuuu": [
+                "ussr": [
                     "fun",
-                    "awo"
+                    "communism"
                 ],
                 "lego": [
                     "fun",
@@ -3197,14 +4074,6 @@ class Commands extends Component{
                     "fun",
                     "lego"
                 ],
-                "roast": [
-                    "fun",
-                    "roast"
-                ],
-                "roastthem": [
-                    "fun",
-                    "roast"
-                ],
                 "ascii": [
                     "fun",
                     "ascii"
@@ -3212,14 +4081,6 @@ class Commands extends Component{
                 "asciify": [
                     "fun",
                     "ascii"
-                ],
-                "communism": [
-                    "fun",
-                    "communism"
-                ],
-                "ussr": [
-                    "fun",
-                    "communism"
                 ],
                 "ppat": [
                     "fun",
@@ -3261,6 +4122,18 @@ class Commands extends Component{
                     "fun",
                     "roll"
                 ],
+                "kiss": [
+                    "fun",
+                    "kiss"
+                ],
+                "kisses": [
+                    "fun",
+                    "kiss"
+                ],
+                "smooch": [
+                    "fun",
+                    "kiss"
+                ],
                 "rps": [
                     "fun",
                     "rps"
@@ -3269,13 +4142,13 @@ class Commands extends Component{
                     "fun",
                     "rps"
                 ],
-                "bully": [
+                "pat": [
                     "fun",
-                    "bully"
+                    "pat"
                 ],
-                "bullies": [
+                "pats": [
                     "fun",
-                    "bully"
+                    "pat"
                 ],
                 "coinflip": [
                     "fun",
@@ -3293,17 +4166,13 @@ class Commands extends Component{
                     "fun",
                     "coinflip"
                 ],
-                "kiss": [
+                "bully": [
                     "fun",
-                    "kiss"
+                    "bully"
                 ],
-                "kisses": [
+                "bullies": [
                     "fun",
-                    "kiss"
-                ],
-                "smooch": [
-                    "fun",
-                    "kiss"
+                    "bully"
                 ],
                 "akinator": [
                     "fun",
@@ -3320,14 +4189,6 @@ class Commands extends Component{
                 "nomnom": [
                     "fun",
                     "nom"
-                ],
-                "pat": [
-                    "fun",
-                    "pat"
-                ],
-                "pats": [
-                    "fun",
-                    "pat"
                 ],
                 "bonk": [
                     "fun",
@@ -3373,14 +4234,6 @@ class Commands extends Component{
                     "fun",
                     "hifi"
                 ],
-                "bite": [
-                    "fun",
-                    "bite"
-                ],
-                "bites": [
-                    "fun",
-                    "bite"
-                ],
                 "blush": [
                     "fun",
                     "blush"
@@ -3388,6 +4241,14 @@ class Commands extends Component{
                 "blushes": [
                     "fun",
                     "blush"
+                ],
+                "awo": [
+                    "fun",
+                    "awo"
+                ],
+                "eruuuu": [
+                    "fun",
+                    "awo"
                 ],
                 "dance": [
                     "fun",
@@ -3409,17 +4270,13 @@ class Commands extends Component{
                     "fun",
                     "hug"
                 ],
-                "cry": [
+                "bite": [
                     "fun",
-                    "cry"
+                    "bite"
                 ],
-                "crys": [
+                "bites": [
                     "fun",
-                    "cry"
-                ],
-                "cries": [
-                    "fun",
-                    "cry"
+                    "bite"
                 ],
                 "kill": [
                     "fun",
@@ -3437,6 +4294,18 @@ class Commands extends Component{
                     "fun",
                     "smug"
                 ],
+                "cry": [
+                    "fun",
+                    "cry"
+                ],
+                "crys": [
+                    "fun",
+                    "cry"
+                ],
+                "cries": [
+                    "fun",
+                    "cry"
+                ],
                 "wave": [
                     "fun",
                     "wave"
@@ -3449,6 +4318,82 @@ class Commands extends Component{
                     "fun",
                     "wave"
                 ],
+                "roast": [
+                    "fun",
+                    "roast"
+                ],
+                "roastthem": [
+                    "fun",
+                    "roast"
+                ],
+                "karuta": [
+                    "games",
+                    "karuta"
+                ],
+                "k": [
+                    "games",
+                    "karuta"
+                ],
+                "karutamod": [
+                    "games",
+                    "karuta"
+                ],
+                "sofi": [
+                    "games",
+                    "sofi"
+                ],
+                "sofimod": [
+                    "games",
+                    "sofi"
+                ],
+                "s": [
+                    "games",
+                    "sofi"
+                ],
+                "cooldown": [
+                    "games",
+                    "cooldown"
+                ],
+                "cd": [
+                    "games",
+                    "cooldown"
+                ],
+                "gacha": [
+                    "games",
+                    "gacha"
+                ],
+                "gmod": [
+                    "games",
+                    "gacha"
+                ],
+                "gachamod": [
+                    "games",
+                    "gacha"
+                ],
+                "ga": [
+                    "games",
+                    "gacha"
+                ],
+                "frame": [
+                    "games",
+                    "frame"
+                ],
+                "frametest": [
+                    "games",
+                    "frame"
+                ],
+                "testframe": [
+                    "games",
+                    "frame"
+                ],
+                "vcgame": [
+                    "games",
+                    "vcgame"
+                ],
+                "vg": [
+                    "games",
+                    "vcgame"
+                ],
                 "ping": [
                     "helpful",
                     "ping"
@@ -3456,14 +4401,6 @@ class Commands extends Component{
                 "pong": [
                     "helpful",
                     "ping"
-                ],
-                "help": [
-                    "helpful",
-                    "help"
-                ],
-                "helps": [
-                    "helpful",
-                    "help"
                 ],
                 "invite": [
                     "helpful",
@@ -3477,14 +4414,6 @@ class Commands extends Component{
                     "helpful",
                     "invite"
                 ],
-                "support": [
-                    "helpful",
-                    "support"
-                ],
-                "sup": [
-                    "helpful",
-                    "support"
-                ],
                 "stats": [
                     "helpful",
                     "stats"
@@ -3496,6 +4425,22 @@ class Commands extends Component{
                 "about": [
                     "helpful",
                     "stats"
+                ],
+                "support": [
+                    "helpful",
+                    "support"
+                ],
+                "sup": [
+                    "helpful",
+                    "support"
+                ],
+                "help": [
+                    "helpful",
+                    "help"
+                ],
+                "helps": [
+                    "helpful",
+                    "help"
                 ],
                 "feedback": [
                     "helpful",
@@ -3509,49 +4454,217 @@ class Commands extends Component{
                     "helpful",
                     "feedback"
                 ],
-                "avatar": [
-                    "server",
-                    "avatar"
+                "unban": [
+                    "moderation",
+                    "unban"
                 ],
-                "av": [
-                    "server",
-                    "avatar"
+                "unyeet": [
+                    "moderation",
+                    "unban"
                 ],
-                "pfp": [
-                    "server",
-                    "avatar"
+                "ban": [
+                    "moderation",
+                    "ban"
                 ],
-                "spotify": [
-                    "server",
-                    "spotify"
+                "yeet": [
+                    "moderation",
+                    "ban"
                 ],
-                "sp": [
-                    "server",
-                    "spotify"
+                "pardon": [
+                    "moderation",
+                    "pardon"
                 ],
-                "serverinfo": [
-                    "server",
-                    "serverinfo"
+                "removestrikes": [
+                    "moderation",
+                    "pardon"
                 ],
-                "si": [
-                    "server",
-                    "serverinfo"
+                "verification": [
+                    "moderation",
+                    "verification"
                 ],
-                "banner": [
-                    "server",
-                    "banner"
+                "verificationlevel": [
+                    "moderation",
+                    "verification"
                 ],
-                "bannerimage": [
-                    "server",
-                    "banner"
+                "warn": [
+                    "moderation",
+                    "warn"
                 ],
-                "inviteinfo": [
-                    "server",
-                    "inviteinfo"
+                "addstrike": [
+                    "moderation",
+                    "warn"
                 ],
-                "ii": [
-                    "server",
-                    "inviteinfo"
+                "addrole": [
+                    "moderation",
+                    "addrole"
+                ],
+                "addroles": [
+                    "moderation",
+                    "addrole"
+                ],
+                "kick": [
+                    "moderation",
+                    "kick"
+                ],
+                "softyeet": [
+                    "moderation",
+                    "kick"
+                ],
+                "automod": [
+                    "moderation",
+                    "automod"
+                ],
+                "automods": [
+                    "moderation",
+                    "automod"
+                ],
+                "emotespam": [
+                    "moderation",
+                    "emotespam"
+                ],
+                "emotespamcount": [
+                    "moderation",
+                    "emotespam"
+                ],
+                "enable": [
+                    "moderation",
+                    "enable"
+                ],
+                "en": [
+                    "moderation",
+                    "enable"
+                ],
+                "disable": [
+                    "moderation",
+                    "disable"
+                ],
+                "ds": [
+                    "moderation",
+                    "disable"
+                ],
+                "bannedwords": [
+                    "moderation",
+                    "bannedwords"
+                ],
+                "bannedword": [
+                    "moderation",
+                    "bannedwords"
+                ],
+                "mentionspam": [
+                    "moderation",
+                    "mentionspam"
+                ],
+                "antiraid": [
+                    "moderation",
+                    "antiraid"
+                ],
+                "antiraids": [
+                    "moderation",
+                    "antiraid"
+                ],
+                "sticky": [
+                    "moderation",
+                    "sticky"
+                ],
+                "stickylist": [
+                    "moderation",
+                    "sticky"
+                ],
+                "stls": [
+                    "moderation",
+                    "sticky"
+                ],
+                "commands": [
+                    "moderation",
+                    "commands"
+                ],
+                "cmmds": [
+                    "moderation",
+                    "commands"
+                ],
+                "unlock": [
+                    "moderation",
+                    "unlock"
+                ],
+                "unlockdown": [
+                    "moderation",
+                    "unlock"
+                ],
+                "removerole": [
+                    "moderation",
+                    "removerole"
+                ],
+                "removeroles": [
+                    "moderation",
+                    "removerole"
+                ],
+                "addemote": [
+                    "moderation",
+                    "addemote"
+                ],
+                "addemoji": [
+                    "moderation",
+                    "addemote"
+                ],
+                "newusers": [
+                    "moderation",
+                    "newusers"
+                ],
+                "newmembers": [
+                    "moderation",
+                    "newusers"
+                ],
+                "lock": [
+                    "moderation",
+                    "lock"
+                ],
+                "lockdown": [
+                    "moderation",
+                    "lock"
+                ],
+                "removeemote": [
+                    "moderation",
+                    "removeemote"
+                ],
+                "rmemoji": [
+                    "moderation",
+                    "removeemote"
+                ],
+                "rmemote": [
+                    "moderation",
+                    "removeemote"
+                ],
+                "prefix": [
+                    "moderation",
+                    "prefix"
+                ],
+                "pre": [
+                    "moderation",
+                    "prefix"
+                ],
+                "showcase": [
+                    "moderation",
+                    "showcase"
+                ],
+                "show": [
+                    "moderation",
+                    "showcase"
+                ],
+                "purge": [
+                    "moderation",
+                    "purge"
+                ],
+                "clean": [
+                    "moderation",
+                    "purge"
+                ],
+                "custompurge": [
+                    "moderation",
+                    "custompurge"
+                ],
+                "cpurge": [
+                    "moderation",
+                    "custompurge"
                 ],
                 "userinfo": [
                     "server",
@@ -3568,6 +4681,22 @@ class Commands extends Component{
                 "whois": [
                     "server",
                     "userinfo"
+                ],
+                "serverinfo": [
+                    "server",
+                    "serverinfo"
+                ],
+                "si": [
+                    "server",
+                    "serverinfo"
+                ],
+                "spotify": [
+                    "server",
+                    "spotify"
+                ],
+                "sp": [
+                    "server",
+                    "spotify"
                 ],
                 "lastfm": [
                     "server",
@@ -3589,6 +4718,14 @@ class Commands extends Component{
                     "server",
                     "lyrics"
                 ],
+                "banner": [
+                    "server",
+                    "banner"
+                ],
+                "bannerimage": [
+                    "server",
+                    "banner"
+                ],
                 "stickers": [
                     "server",
                     "stickers"
@@ -3601,6 +4738,14 @@ class Commands extends Component{
                     "server",
                     "stickers"
                 ],
+                "inviteinfo": [
+                    "server",
+                    "inviteinfo"
+                ],
+                "ii": [
+                    "server",
+                    "inviteinfo"
+                ],
                 "emojis": [
                     "server",
                     "emojis"
@@ -3608,6 +4753,18 @@ class Commands extends Component{
                 "getemojis": [
                     "server",
                     "emojis"
+                ],
+                "avatar": [
+                    "server",
+                    "avatar"
+                ],
+                "av": [
+                    "server",
+                    "avatar"
+                ],
+                "pfp": [
+                    "server",
+                    "avatar"
                 ],
                 "poll": [
                     "server",
@@ -3617,6 +4774,38 @@ class Commands extends Component{
                     "server",
                     "poll"
                 ],
+                "quote": [
+                    "utilities",
+                    "quote"
+                ],
+                "excerpt": [
+                    "utilities",
+                    "quote"
+                ],
+                "fact": [
+                    "utilities",
+                    "fact"
+                ],
+                "afact": [
+                    "utilities",
+                    "fact"
+                ],
+                "anime": [
+                    "utilities",
+                    "anime"
+                ],
+                "animesearch": [
+                    "utilities",
+                    "anime"
+                ],
+                "wikipedia": [
+                    "utilities",
+                    "wikipedia"
+                ],
+                "wiki": [
+                    "utilities",
+                    "wikipedia"
+                ],
                 "youtube": [
                     "utilities",
                     "youtube"
@@ -3625,25 +4814,25 @@ class Commands extends Component{
                     "utilities",
                     "youtube"
                 ],
-                "inshorts": [
+                "urban": [
                     "utilities",
-                    "inshorts"
+                    "urban"
                 ],
-                "is": [
+                "ud": [
                     "utilities",
-                    "inshorts"
+                    "urban"
                 ],
-                "news": [
+                "dictionary": [
                     "utilities",
-                    "inshorts"
+                    "dictionary"
                 ],
-                "translate": [
+                "define": [
                     "utilities",
-                    "translate"
+                    "dictionary"
                 ],
-                "tr": [
+                "dict": [
                     "utilities",
-                    "translate"
+                    "dictionary"
                 ],
                 "track": [
                     "utilities",
@@ -3661,41 +4850,17 @@ class Commands extends Component{
                     "utilities",
                     "color"
                 ],
-                "privacysetting": [
+                "inshorts": [
                     "utilities",
-                    "privacysetting"
+                    "inshorts"
                 ],
-                "pvcset": [
+                "is": [
                     "utilities",
-                    "privacysetting"
+                    "inshorts"
                 ],
-                "dictionary": [
+                "news": [
                     "utilities",
-                    "dictionary"
-                ],
-                "define": [
-                    "utilities",
-                    "dictionary"
-                ],
-                "dict": [
-                    "utilities",
-                    "dictionary"
-                ],
-                "policy": [
-                    "utilities",
-                    "policy"
-                ],
-                "privacy": [
-                    "utilities",
-                    "policy"
-                ],
-                "quote": [
-                    "utilities",
-                    "quote"
-                ],
-                "excerpt": [
-                    "utilities",
-                    "quote"
+                    "inshorts"
                 ],
                 "yttogether": [
                     "utilities",
@@ -3705,21 +4870,29 @@ class Commands extends Component{
                     "utilities",
                     "yttogether"
                 ],
-                "urban": [
+                "policy": [
                     "utilities",
-                    "urban"
+                    "policy"
                 ],
-                "ud": [
+                "privacy": [
                     "utilities",
-                    "urban"
+                    "policy"
                 ],
-                "anime": [
+                "translate": [
                     "utilities",
-                    "anime"
+                    "translate"
                 ],
-                "animesearch": [
+                "tr": [
                     "utilities",
-                    "anime"
+                    "translate"
+                ],
+                "privacysetting": [
+                    "utilities",
+                    "privacysetting"
+                ],
+                "pvcset": [
+                    "utilities",
+                    "privacysetting"
                 ],
                 "math": [
                     "utilities",
@@ -3728,22 +4901,6 @@ class Commands extends Component{
                 "maths": [
                     "utilities",
                     "math"
-                ],
-                "fact": [
-                    "utilities",
-                    "fact"
-                ],
-                "afact": [
-                    "utilities",
-                    "fact"
-                ],
-                "wikipedia": [
-                    "utilities",
-                    "wikipedia"
-                ],
-                "wiki": [
-                    "utilities",
-                    "wikipedia"
                 ]
             },
             searchText:'',
