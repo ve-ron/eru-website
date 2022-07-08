@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 
-import { E_NAME } from "../constant";
+import { E_NAME, E_NAME_NOSPACE } from "../constant";
 
 const CFooter = () => {
     return (
@@ -14,7 +14,7 @@ const CFooter = () => {
                         <span className="self-center text-2xl font-semibold whitespace-nowrap text-c_normal-light hover:text-c_focus-light">{E_NAME}</span>
                     </Link>
                     <span className="flex items-center text-c_normal-light">Invite Eru today.</span>
-                    <span className="flex items-center text-sm text-c_normal-light">© 2022 Eru bot. All rights reserved.</span>
+                    <span className="flex items-center text-sm text-c_normal-light">© 2022 {E_NAME_NOSPACE}. All rights reserved.</span>
                 </div>
                 <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>
