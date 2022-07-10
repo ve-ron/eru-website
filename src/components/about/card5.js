@@ -14,7 +14,7 @@ const Card5 = () => {
             <div className="text-lg md:flex lg:text-base text-left flex-[1_1_50%] md:w-3/5 ">
                 <span className="my-3 md:pr-6">
                     Control commands for every channels to avoid spams.
-                    Check user detailed profiles of users, check server details and more.
+                    Check detailed profiles of users, check server details and more.
                 </span>
             </div>
         </div>
