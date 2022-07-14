@@ -24,7 +24,7 @@ const CFooter = () => {
                                 <Link to="/#" className="hover:underline">About Eru</Link>
                             </li>
                             <li className="mb-2">
-                                <Link to="/#" className="hover:underline">Developers</Link>
+                                <Link to="/policy#contact-us" className="hover:underline">Developers</Link>
                             </li>
                             <li className="mb-2">
                                 <Link to="/policy#contact-us" className="hover:underline">Contact us.</Link>

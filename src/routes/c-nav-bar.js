@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom'
 
 import { E_NAME } from "../constant";
-// import Commands from "../components/commands";
+
+import { changeSearch } from "../state/actions";
+import { useDispatch } from "react-redux"; 
 
 import './c-nav-bar.css'
 
@@ -13,12 +15,14 @@ const NavBar = () => {
     Html/ Bootstrap part
     */
    let navigate = useNavigate();
+   const dispatch = useDispatch()
    const [navStatus, setNavStatus] = useState(false);
    const [searchText, setSearchText] = useState('');
 
     const navigateTo = (e) => {
         if (e.key === 'Enter') {
-            navigate('/commands',{replace: true, state: { searchText:searchText }});
+            dispatch(changeSearch(searchText))
+            navigate('/commands');
             setNavStatus(false);
         }
     } 

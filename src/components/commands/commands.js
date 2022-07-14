@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-// import { useLocation, withRouter, useParams } from "react-router-dom";
-import { withState } from "../../utils";
+import { connect } from "react-redux";
+import { changeSearch, resetSearch } from "../../state/actions"; 
 
 import './commands.css'
 
@@ -5037,13 +5037,20 @@ class Commands extends Component{
     }
 
     componentDidMount() {
-        if (this.props.state && this.props.state.searchText){
+        if (this.props.searchText){
             this.setState((pre)=>{
-                return {searchText:this.props.state.searchText}
+                return {searchText:this.props.searchText}
             },this.searchCmmd)
         }
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.state.searchText !== this.props.searchText && prevProps.searchText !== this.props.searchText) {
+            this.setState((pre)=>{
+                   return {searchText:this.props.searchText}
+            },this.searchCmmd2)
+        }
+    }
     handleSidebar = ( event ) => {
         event.preventDefault();
         this.setState((prevState) => {
@@ -5052,7 +5059,6 @@ class Commands extends Component{
     }
 
     searchCmmd = () => {
-        
         if (true) {
             let data = this.state.commands[this.state.searchText.toLowerCase()];
             if (data){
@@ -5074,6 +5080,24 @@ class Commands extends Component{
 
     }
 
+    searchCmmd2 = () => {
+        if (true) {
+            let data = this.state.commands[this.props.searchText.toLowerCase()];
+            if (data){
+                let [cog, command] = data
+                if (cog){
+                    this.setState({
+                            activeCategory:cog,
+                            sidebarHidden:true
+                        }
+                    ,()=>{
+                        document.getElementById(command).scrollIntoView({behavior:'smooth'});
+                        return null;
+                    })
+                }
+            }
+        }
+    }
     
     
     render() {
@@ -5161,14 +5185,12 @@ class Commands extends Component{
                                         </svg>
                                     </button>
                                     <h1 className="font-bold text-center text-pink-800 text-[15px] ">Commands List</h1>
-                                    {/* <i className="bi bi-x cursor-pointer ml-28 lg:hidden" onclick="Close()" ></i> */}
                                     <button disabled className="ml-3 md:hidden opacity-0">
                                         <svg xmlns="https://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
                                         </svg>
                                     </button>
                                 </div>
-                                {/* <div className="my-2 bg-gray-600 h-[1px]"></div> */}
                             </div>
                             <hr className="border-white my-2 "></hr>
                             <div className="mt-4 text-left flex-col">
@@ -5190,4 +5212,10 @@ class Commands extends Component{
     }
 }
 
-export default withState(Commands);
+function mapStateToProps(state) {
+    return {
+        searchText: state.searchTextReducer.searchText
+    }   
+}
+
+export default connect(mapStateToProps, {changeSearch, resetSearch})(Commands);
