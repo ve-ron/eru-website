@@ -5,6 +5,7 @@ import Card2 from './card2';
 import Card3 from './card3';
 import Card4 from './card4';
 import Card5 from './card5';
+import Card6 from './card6';
 import Ticker from './newticker'
 import Jumbo from './jumbotron';
 
@@ -23,8 +24,9 @@ const About = () => {
             <section className='container m-2 md:m-auto md:px-14'>
                 <Card1 />
                 <Card2 />
-                <Card3 />
+                <Card6 />
                 <Card4 />
+                <Card3 />
                 <Card5 />
             </section>
         
