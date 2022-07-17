@@ -85,7 +85,7 @@ const NavBar = () => {
                             {/* vote */}
                         </li>
                         <li>
-                            <Link onClick={(e)=>{setNavStatus(!navStatus)}} to="/status" className="block py-2 pr-4 pl-3 text-c_normal-light border-b border-gray-100 hover:bg-c_focus-light hover:border hover:rounded hover:border-c_normal-light md:hover:bg-transparent md:border-0 md:hover:text-c_focus-light md:hover:border-none md:p-0 ">Staus</Link>
+                            <Link onClick={(e)=>{setNavStatus(!navStatus)}} to="/status" className="block py-2 pr-4 pl-3 text-c_normal-light border-b border-gray-100 hover:bg-c_focus-light hover:border hover:rounded hover:border-c_normal-light md:hover:bg-transparent md:border-0 md:hover:text-c_focus-light md:hover:border-none md:p-0 ">Status</Link>
                             {/* Status */}
                         </li>
 
