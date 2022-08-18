@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import { INVITE_URL, TOPGG_URL, SUPPORT_SERVER_URL } from '../../constant'
+import { INVITE_URL, TOPGG_URL, BOTLIST_URL, DC_REDIRECT, SUPPORT_SERVER_URL } from '../../constant'
 
 const CRedirect = () => {
     const { pathname } = useLocation();
@@ -13,21 +13,35 @@ const CRedirect = () => {
                 break;
             case "/vote":
                 window.location.replace(TOPGG_URL);
+                break;  
+            case "/topgg":
+                window.location.replace(TOPGG_URL);
+                break;
+            case "/botlist":
+                window.location.replace(BOTLIST_URL);
                 break;
             case "/support":
                 window.location.replace(SUPPORT_SERVER_URL);
+                break;
+            case "/login":
+                window.location.replace(DC_REDIRECT);
                 break;
             default:
                 break;
         }
         
     },[pathname])
+
     let path = ((pathname)=>{
         switch (pathname) {
             case "/invite":
                 return INVITE_URL
             case "/vote":
                 return TOPGG_URL
+            case "/topgg":
+                return TOPGG_URL
+            case "/botlist":
+                return BOTLIST_URL
             case "/support":
                 return SUPPORT_SERVER_URL
             default:
