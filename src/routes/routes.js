@@ -9,6 +9,7 @@ import PP from "../components/privacy-policy";
 import Status from "../components/status";
 import ToS from "../components/ToS";
 import Error from "../components/error";
+import OAuth2 from "../components/oauth2";
 
 import ProtectedRoute from "../utils/protectedRoute";
 import NavBar from "./c-nav-bar"
@@ -45,6 +46,7 @@ const CRoutes = ()  => {
                 <Route path="/tos" element={<ToS />} />  
 
                 <Route path="/login" element={<CRedirect />} />
+                <Route path="/oauth" element={<OAuth2 />} />
                 <Route path="/profile" element={<ProtectedRoute isAllowed={''} redirectPath="/" />} > 
                     <Route path="" element={''} />
                 </Route>

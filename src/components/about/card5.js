@@ -10,7 +10,7 @@ const Card5 = () => {
             <div className=" text-left text-xl md:text-2xl  lg:text-3xl md:order-1 flex font-semibold text-pink-800 flex-[1_1_50%] md:w-3/5">
                 <h2 className="my-5 md:pl-10 md:self-end md:pr-10">Informative commands for your Server.</h2>
             </div>
-            <img className="flex-[1_1_100%] mb-5 md:my-auto float-right md:w-2/5 object-contain " src={img} alt="welcomer"></img>
+            <img draggable="false" className="flex-[1_1_100%] mb-5 md:my-auto float-right md:w-2/5 object-contain " src={img} alt="welcomer"></img>
             <div className="text-lg md:flex lg:text-base text-left flex-[1_1_50%] md:w-3/5 md:order-1">
                 <span className="my-3 md:pr-6 md:pl-10">
                 Control commands for every channels to avoid spams.

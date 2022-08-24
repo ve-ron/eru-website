@@ -10,7 +10,7 @@ const Card6 = () => {
             <div className=" text-left text-xl md:text-2xl  lg:text-3xl flex font-semibold text-pink-800 flex-[1_1_50%] md:w-3/5">
                 <h2 className="my-5 md:self-end md:pr-10">Use as Support bot for other bots.</h2>
             </div>
-            <img className="flex-[1_1_100%] mb-5 md:my-auto float-right md:w-2/5 object-contain md:order-1" src={img} alt="welcomer"></img>
+            <img draggable="false" className="flex-[1_1_100%] mb-5 md:my-auto float-right md:w-2/5 object-contain md:order-1" src={img} alt="welcomer"></img>
             <div className="text-lg md:flex lg:text-base text-left flex-[1_1_50%] md:w-3/5 ">
                 <span className="my-3 md:pr-6">
                     Eru has functions to support other bots to enrich your experince with them. Eru supports Karuta, Sofi, Gachapon and will add more.

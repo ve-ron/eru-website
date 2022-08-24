@@ -9,7 +9,7 @@ const Jumbo = () => {
     return(
         <>
         <div className="custom-bg items-center h-5/6 md:h-96 md:flex overflow-hidden hover:shadow-2xl mx-2 my-4 rounded-lg md:mx-auto md:my-4">
-            <img className="w-full h-48 object-cover md:block md:w-1/2 md:h-auto sm:order-1" alt='eru img' src={img}></img>
+            <img className="w-full h-48 object-cover md:block md:w-1/2 md:h-auto sm:order-1" draggable="false" alt='eru img' src={img}></img>
             <div className="text-left px-10" >
                 <h1 className="text-3xl mt-4 sm:text-4xl sm:mt-10 md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-pink-800">A bot for every server.</h1>
                 <p className="text-lg sm:mt-5 sm:text-xl md:text-base lg:text-xl mt-4">A multi-purpose bot with hundreds of commands.<span className="text-success"> Setup welcomer to invite new members in a style.</span> Use Auto-moderation to protect your servers. Control channel wise commands. Search animes, movies etc directly on discord.</p>

@@ -63,8 +63,8 @@ const NavBar = () => {
                     <div className="relative">
                         <button onClick={(e)=>{setloginDropDown(!loginDropDownStatus)}} className="md:ml-5 items-center p-2 rounded-lg text-c_normal-light  hover:bg-gray-100  focus:outline-none focus:ring-2 focus:ring-c_focus-light">
                             {/* <img src="/logo512.png" className="rounded-full mr-3 h-8 sm:h-8 " alt="Eru " /> */}
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                             </svg>
                         </button>
                         <div className={
@@ -73,8 +73,8 @@ const NavBar = () => {
                             <ul className="">
                                 <li className="items-end">
                                     <button className="px-5 py-2 rounded-lg bg-pink-500 hover:bg-c_focus-light font-base flex text-center ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
                                         </svg>
                                         <Link onClick={resetAll} to="/login" className="">Login</Link>
                                     </button>

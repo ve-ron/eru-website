@@ -8,7 +8,7 @@ const INVITE_URL = 'https://discord.com/api/oauth2/authorize?client_id=841372493
 const SUPPORT_SERVER_URL = 'https://discord.gg/f83zVQHX6J';
 const TOPGG_URL='https://top.gg/bot/841372493746798612';
 const BOTLIST_URL = 'https://discordbotlist.com/bots/eru-5028';
-const DC_REDIRECT = 'https://discord.com/api/oauth2/authorize?client_id=789203447823466537&redirect_uri=https%3A%2F%2Fwww.erubot.com%2Foauth&response_type=code&scope=identify';
+const DC_REDIRECT = '';
 
 export {
     URL,
