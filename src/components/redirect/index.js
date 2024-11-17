@@ -11,12 +11,12 @@ const CRedirect = () => {
             case "/invite":
                 window.location.replace(INVITE_URL);
                 break;
-            case "/vote":
-                window.location.replace(TOPGG_URL);
-                break;
-            case "/support":
-                window.location.replace(SUPPORT_SERVER_URL);
-                break;
+            // case "/vote":
+            //     window.location.replace(TOPGG_URL);
+            //     break;
+            // case "/support":
+            //     window.location.replace(SUPPORT_SERVER_URL);
+            //     break;
             default:
                 break;
         }
@@ -26,10 +26,10 @@ const CRedirect = () => {
         switch (pathname) {
             case "/invite":
                 return INVITE_URL
-            case "/vote":
-                return TOPGG_URL
-            case "/support":
-                return SUPPORT_SERVER_URL
+            // case "/vote":
+            //     return TOPGG_URL
+            // case "/support":
+            //     return SUPPORT_SERVER_URL
             default:
                 return '';   
         }
