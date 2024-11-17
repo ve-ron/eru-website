@@ -38,7 +38,7 @@ const CRoutes = ()  => {
                 <Route path="/vote"element={<CRedirect />} />
 
                 <Route path="/policy" element={<PP />} />
-                <Route path="/status" element={<Status />} />
+                <Route path="/status" element={<About />} />
                 <Route path="/tos" element={<ToS />} />  
 
                 <Route path="*" element={<Error />} />

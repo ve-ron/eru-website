@@ -39,7 +39,7 @@ const Status = (props) => {
                                 </svg>
                             </span> 
                             <span className="text-3xl md:text-5xl ">
-                                { Math.round((Math.random()*(20 - 15) + 15)*100) / 100  }ms.
+                                {}
                             </span>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ const Status = (props) => {
                             Usage
                         </div>
                         <div className="text-lg text-rose-50">
-                            1.89Gb
+                            {}
                         </div>
                     </div>
                     <div className="md:w-full rounded-lg my-5 mx-2 md:m-12  p-2 bg-rose-300 ">
@@ -59,7 +59,7 @@ const Status = (props) => {
                             Users
                         </div>
                         <div className="text-lg text-rose-50">
-                            1,443,637
+                            {}
                         </div>
                     </div>
                     <div className="md:w-full rounded-lg my-5 mx-2 md:m-12 p-2  bg-rose-300">
@@ -67,7 +67,7 @@ const Status = (props) => {
                             Servers
                         </div>
                         <div className="text-lg text-rose-50 ">
-                            702
+                            {}
                         </div>
                     </div>
                 </div>

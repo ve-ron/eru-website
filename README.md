@@ -48,6 +48,5 @@ You can request data deletion by contacting us. We will automatically (and witho
 
 ## Contact Us.
 **You can contact us on following platforms.**
-- [Discord](https://discord.gg/f83zVQHX6J)
 - [Email us]()
-- [GitHub](https://github.com/ex-trimist/)
+- [GitHub]()
